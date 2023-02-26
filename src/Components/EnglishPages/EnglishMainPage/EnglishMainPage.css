@@ -1,0 +1,7 @@
+.english-main-cont{
+    direction: ltr;
+    margin: 2%;
+}
+.english-main-cont .link:hover{
+box-shadow: 2px 2px 2px 2px #00394f;
+}

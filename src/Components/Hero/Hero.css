@@ -1,0 +1,32 @@
+.mainHero{
+    color: #17a2bB;
+    margin:auto;
+    margin-top: 1%;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    position: relative;
+}
+.image{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.contentHero{display: flex;
+flex-direction:column;
+align-items: flex-start;
+;}
+.subTitleHero{
+    padding: 10px;
+    font-size: 3rem;
+    color:#00394f;
+
+}
+@media only screen and (max-width: 540px) {
+.image{
+  display: none;
+}
+
+    }

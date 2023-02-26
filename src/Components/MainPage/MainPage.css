@@ -1,0 +1,38 @@
+.mainCont{
+
+    background: white ;
+    margin: 2%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-left: 60%;
+    
+}
+.question{
+    color:#00394f;
+    font-size: 3rem;
+
+}
+
+.chooseStage{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     width: max-content;
+
+     
+}
+.chooseStage .link{
+     margin: 3px;
+     margin-bottom: 1%;
+     font: larger bolder;
+     color: #17a2b8;
+     cursor:pointer;
+   
+}
+
+.chooseStage .link:hover{
+    box-shadow: 2px 2px 2px 2px #00394f;
+}

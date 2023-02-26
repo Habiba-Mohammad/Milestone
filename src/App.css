@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@700&family=Mirza&family=Poppins:ital,wght@0,700;1,700&family=Vibes&display=swap');  
+
+body{ 
+box-sizing: border-box;
+direction: rtl;
+font-family: 'Harmattan', sans-serif;}
+
+
+
+/* :root{
+    --text-color: #06b0c7;
+    --button-color: #a32962;
+    --hoover: rgb(75, 107, 114);
+    --main-radius: 15px;
+    }.container{
+    direction: rtl;
+    background-color: var(--text-color);
+}*/
+/* 
+.main--title {
+  margin: 0;
+} */
