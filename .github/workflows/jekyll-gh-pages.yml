@@ -1,52 +1,67 @@
-
-name: Deploy
+# ./.github/workflows/test-deploy.yml
+name: Test and deploy
 
 on:
   push:
     branches:
       - main
+      - dev
+  pull_request: {}
 
 jobs:
-  build:
-    name: Build
+  test:
+    name: Test
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.11.0
+      - name: Checkout repository
         uses: actions/checkout@v3
-
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
-
+          node-version: 14
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
-
-      - name: Build project
-        run: npm run build
-
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
+      - name: Arc hydrate
+        run: arc hydrate
+      - name: Run tests
+        run: npm test
 
   deploy:
     name: Deploy
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.11.0
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          name: production-files
-          path: ./dist
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          node-version: 14
+      - name: Env report
+        run: |
+          echo "Event name: ${{ github.event_name }}"
+          echo "Git ref:    ${{ github.ref }}"
+          echo "GH actor:   ${{ github.actor }}"
+          echo "SHA:        ${{ github.sha }}"
+          VER=`node --version`; echo "Node ver:   $VER"
+          VER=`npm --version`; echo "npm ver:    $VER"
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+      - name: Arc hydrate
+        run: arc hydrate
+      - name: Staging deploy
+        if: github.ref == 'refs/heads/dev'
+        run: arc deploy --staging -v --prune
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Production deploy
+        if: github.ref == 'refs/heads/main'
+        run: arc deploy --production -v --prune
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
