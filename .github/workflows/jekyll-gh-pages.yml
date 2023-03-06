@@ -1,66 +1,50 @@
-# ./.github/workflows/test-deploy.yml
-name: Deploy
+name: deploy
+
 on:
+  pull_request:
+    branches: [master]
   push:
-    branches:
-      - main
-      - dev
-  pull_request: {}
+    branches: [master]
 
 jobs:
-  test:
-    name: Test
+  checks:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
-      - name: Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.11.0
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          node-version: 14
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-      - name: Arc hydrate
-        run: arc hydrate
-      - name: Run tests
-        run: npm test
-
-  deploy:
-    name: Deploy
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.11.0
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-      - name: Env report
+          node-version: '12.x'
+      - name: Test Build
         run: |
-          echo "Event name: ${{ github.event_name }}"
-          echo "Git ref:    ${{ github.ref }}"
-          echo "GH actor:   ${{ github.actor }}"
-          echo "SHA:        ${{ github.sha }}"
-          VER=`node --version`; echo "Node ver:   $VER"
-          VER=`npm --version`; echo "npm ver:    $VER"
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-      - name: Arc hydrate
-        run: arc hydrate
-      - name: Staging deploy
-        if: github.ref == 'refs/heads/dev'
-        run: arc deploy --staging -v --prune
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      - name: Production deploy
-        if: github.ref == 'refs/heads/main'
-        run: arc deploy --production -v --prune
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
+          npm run build
+  gh-release:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Build
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
+          npm run build
+      - name: Release to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
