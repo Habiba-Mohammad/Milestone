@@ -1,51 +1,45 @@
-name: Deploy
-
 on:
-  push:
-    branches:
-      - main
+
+  push: 
+    branches: [ main ]
+  pull_request: 
+    branches: [ main ]
+
+  workflow_dispatch:
 
 jobs:
-  build:
-    name: Build
+  build: 
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repo
-        run: actions/setup-node@2
+    strategy:
+      matrix:
+        node-version: [14.x]
 
+    steps: 
+      - name: Checkout crawler-app
+        uses: actions/checkout@v2
 
-      - name: Setup Node
-        uses: actions/setup-node@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@2
+        with: 
+          node-version: ${{ matrix.node-version }}
 
+      - name: Install Dependencies
+        run: npm ci
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v2
+      - run: npm run build
 
-      - name: Build project
-        run: npm run build
-
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
-
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@1.2
+        with: 
+          publish-dir: './dist'
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from Github actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
