@@ -64,7 +64,7 @@ function App() {
 <>
 <Nav/>
 <Routes>
-  <Route path="/" element={<>
+  <Route path="/Milestone" element={<>
 
 <Hero/>
 <MainPage/>

@@ -8,7 +8,7 @@ const Nav = () => {
 <nav className='Nav-bar'>
            <ul>
           
-              <Link className="link"to="/">الصفحة الرئيسية </Link>
+              <Link className="link"to="/Milestone">الصفحة الرئيسية </Link>
               <Link className="link" to="/login">تسجيل الدخول</Link>
 
               <Link className="link" to="/English">English</Link>
