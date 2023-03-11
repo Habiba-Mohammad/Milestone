@@ -1,6 +1,6 @@
 import"./AboutUs.css"
-import teamImg1 from"../../images/team-1.jpg"
-import teamImg2 from"../../images/team-2.jpg"
+import teamImg1 from"../../../public/images/team-1.jpg"
+import teamImg2 from"../../../public/images/team-2.jpg"
 
 const AboutUs = () => {
   return (
