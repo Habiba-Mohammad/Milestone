@@ -1,5 +1,5 @@
 import"./Hero.css"
-import image from "../../../public/images/header.png" 
+// import image from "../../../public/images/header.png" 
 export default function Hero(){
     return(<>
     <div className="mainHero">
