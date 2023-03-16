@@ -1,7 +1,7 @@
 import {React,useState} from "react"
 import {Link} from "react-router-dom"
 import"../Login/Login.css"
-import welcomeImage from "../../../images/stick-kids-g8e9718dcb_640.png"
+import welcomeImage from "../../..//images/stick-kids-g8e9718dcb_640.png"
 export default function SignUp(){
     const [logIn,setLogIn]=useState({
         email:"",

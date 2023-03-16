@@ -17,6 +17,7 @@ import DataEnglish from './Data/DataEnglish'
 import StagesEnglish from './Components/Stages/StagesEnglish/StagesEnglish'
 import EnglishMainPage from './Components/EnglishPages/EnglishMainPage/EnglishMainPage'
 import EnglishNav from './Components/Stages/StagesEnglish/EnglishNav/EnglishNav'
+import doctor from"./images/doctor-drink.gif"
 function App() {
 
   let itemsEnglish=DataEnglish.map(item=>{
@@ -62,6 +63,7 @@ function App() {
 
   return (
 <>
+
 <Nav/>
 <Routes>
   <Route path="/Milestone" element={<>
@@ -114,6 +116,7 @@ function App() {
   <Route path="/stageEnglish12" element={itemsEnglish[11]}/> 
 
 </Routes> 
+<img src={doctor} alt="doctor"/>
 
 <Footer/>
 

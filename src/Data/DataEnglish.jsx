@@ -21,11 +21,9 @@ export default
     cognitionTitle:cognitionTitle,
     movementTitle:movementTitle,
    feeding: [
-[feedingSubTitle1],
 "Baby uses coordinated suck-swallow-breathe pattern during breast and bottle feeds, to efficiently consume calories",
-[feedingSubTitle2],
 "	Efficient suckle of bottle nipple",
-[feedingSubTitle3]
+
 ,
 "Breast and/or formula provides all of baby’s nutrition" ],
     social : 
@@ -57,11 +55,8 @@ language : ["Makes sounds other than crying",
           cognitionTitle:cognitionTitle,
           movementTitle:movementTitle,
    feeding: [
-[feedingSubTitle1],
 "Tongue and jaw move together",
-[feedingSubTitle2],
 "Efficient suckle of bottle nipple",
-[feedingSubTitle3],
       "Begins to put their hands on the bottle during feeding"],
     social : 
     [
@@ -100,14 +95,11 @@ language : ["Makes sounds other than crying",
       cognitionTitle:cognitionTitle,
       movementTitle:movementTitle,
    feeding: [
-[feedingSubTitle1],
     "Baby’s tongue begins to move without the lips",
 "Baby’s automatic suck is more voluntary",
 "Baby develops phasic bite and vertical munching pattern",
-[feedingSubTitle2],
 "Open cup drinking can be introduced around 6-12 months",
 "Baby is able to use upper lip to clean a spoon",
-[feedingSubTitle3],
 "Breast milk or formula continues to provide a majority of the baby’s nutrition",
 "Introduce infant cereals, thin pureed foods off a spoon"
   ],
@@ -149,13 +141,10 @@ language : ["Makes sounds other than crying",
       cognitionTitle:cognitionTitle,
       movementTitle:movementTitle,
    feeding: [
-[feedingSubTitle1],
 "Gag response declines as mouth becomes used to solid foods",
 "Child develops lateral placement of foods",
-[feedingSubTitle2],
 "Open cups can be introduced from 6-12 months",
 "Helps adult with spoon",
-[feedingSubTitle3],
 "Breast milk or formula continues to provide a majority of the baby’s nutrition",
 "Introduction of lumpy mashed solids",
 "Introduce easy dissolvable finger foods"
@@ -201,9 +190,7 @@ language : ["Makes sounds other than crying",
       movementTitle:movementTitle,   feeding: [
 "	Lip seal emerges for cup drinking",
 "Rotary chew may begin to emerge",
-[feedingSubTitle2],
 "Open cups can be introduced from 6-12 months",
-[feedingSubTitle3],
 "Breast milk or formula continues to provide a majority of the baby’s nutrition",
 "Mash with harder/lumpier solids",
 
@@ -242,12 +229,9 @@ language : ["Makes sounds other than crying",
       cognitionTitle:cognitionTitle,
       movementTitle:movementTitle,
    feeding: [
-"Oral Motor Skills",
 "Baby can use a sustained, controlled bite",
-"Feeding Milestones",
 "Open cups can be introduced 6-12 months",
 "Wean bottle feeding around 12 months old",
-"Appropriate Foods/Textures to Introduce",
 "Breast milk or formula continues to provide a majority of the baby’s nutrition"
       ],
       social : 
@@ -287,12 +271,9 @@ language : ["Makes sounds other than crying",
       cognitionTitle:cognitionTitle,
       movementTitle:movementTitle,
    feeding: [
-  "Oral Motor Skills",
   "Tongue tip elevation",
-  "Feeding Milestones",
 "Holds cup with both hands",
 "Grabs and holds spoon with both hands for self-feeding",
-"Appropriate Foods/Textures to Introduce",
 "Solid foods become child’s primary nutrition source"
   ],
   social : 
@@ -334,16 +315,13 @@ language : ["Makes sounds other than crying",
       cognitionTitle:cognitionTitle,
       movementTitle:movementTitle,
    feeding: [
-"Oral Motor Skills",
 "Tongue tip elevation",
 "Rotary chewing pattern is refined",
 "Lateral placement of foods is refined",
-"Feeding Milestones",
 "Child self-feeds a majority of foods",
 "Can chew a wide range of textures",
 "Able to chew with mouth closed",
 "Child has more control of cup drinking",
-"Appropriate Foods/Textures to Introduce",
 "Solid foods are child’s primary nutrition source",
 "Children should be able to eat most all food by this time"
     
@@ -385,11 +363,8 @@ language : ["Makes sounds other than crying",
       cognitionTitle:cognitionTitle,
       movementTitle:movementTitle,
    feeding: [
-"Oral Motor Skills",
 "Child can control lips, jaw and tongue ",
-"Feeding Milestones",
 "Child can drink from cup or bottle and eat using spoon or fork ",
-"Appropriate Foods/Textures to Introduce",
 "Child is able to chew and eat fruits, veggies, meats, and grains"   ],
 social : 
 [
@@ -430,11 +405,8 @@ movement:
       cognitionTitle:cognitionTitle,
       movementTitle:movementTitle,
    feeding: [
-    "Oral Motor Skills",
     "Child can control lips, jaw and tongue ",
-    "Feeding Milestones",
     "Child can drink from cup or bottle and eat using spoon or fork ",
-    "Appropriate Foods/Textures to Introduce",
     "Child is able to chew and eat fruits, veggies, meats, and grains"   ],
     
     social : 
@@ -473,11 +445,8 @@ movement:
       cognitionTitle:cognitionTitle,
       movementTitle:movementTitle,
    feeding: [
-    "Oral Motor Skills",
     "Child can control lips, jaw and tongue ",
-    "Feeding Milestones",
     "Child can drink from cup or bottle and eat using spoon or fork ",
-    "Appropriate Foods/Textures to Introduce",
     "Child is able to chew and eat fruits, veggies, meats, and grains"   ],
     
     social : 
@@ -521,11 +490,8 @@ movement:
    cognitionTitle:cognitionTitle,
    movementTitle:movementTitle,
    feeding: [
-    "Oral Motor Skills",
     "Child can control lips, jaw and tongue ",
-    "Feeding Milestones",
     "Child can drink from cup or bottle and eat using spoon or fork ",
-    "Appropriate Foods/Textures to Introduce",
     "Child is able to chew and eat fruits, veggies, meats, and grains"   ],
     
     social : 
