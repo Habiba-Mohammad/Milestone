@@ -9,7 +9,6 @@ import Stages from "./Components/Stages/Stages"
 import Footer from './Components/Footer/Footer'
 import MainPage from './Components/MainPage/MainPage';
 import { BrowserRouter, Route,Routes,Link } from 'react-router-dom'
-import SignUp from './Components/Forms/SignUp/SignUp'
 import AboutUs from './Components/AboutUs/AboutUs'
 import Articles from './Components/Articles/Articles'
 import Help from './Components/Help/Help'
@@ -17,7 +16,6 @@ import DataEnglish from './Data/DataEnglish'
 import StagesEnglish from './Components/Stages/StagesEnglish/StagesEnglish'
 import EnglishMainPage from './Components/EnglishPages/EnglishMainPage/EnglishMainPage'
 import EnglishNav from './Components/Stages/StagesEnglish/EnglishNav/EnglishNav'
-import doctor from"./images/doctor-drink.gif"
 function App() {
 
   let itemsEnglish=DataEnglish.map(item=>{
@@ -66,13 +64,13 @@ function App() {
 
 <Nav/>
 <Routes>
-  <Route path="/Milestone" element={<>
+  <Route path="/" element={<>
 
 <Hero/>
 <MainPage/>
   </>}/>
-<Route path="signUp" element={<><SignUp/> </>}/>  
-<Route path="login" element={<><Login/> </>}/>  
+{/* <Route path="signUp" element={<><SignUp/> </>}/>  
+<Route path="login" element={<><Login/> </>}/>   */}
 
 <Route path="English" element={<>
 
@@ -116,7 +114,7 @@ function App() {
   <Route path="/stageEnglish12" element={itemsEnglish[11]}/> 
 
 </Routes> 
-<img src={doctor} alt="doctor"/>
+{/* <img className='doctor' src={doctor} alt="doctor"/> */}
 
 <Footer/>
 

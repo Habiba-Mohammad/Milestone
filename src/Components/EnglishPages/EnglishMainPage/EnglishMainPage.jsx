@@ -1,11 +1,12 @@
 import React from 'react'
 import "./EnglishMainPage.css"
 import { Link } from 'react-router-dom'
+import doctor from "../../../images/doctor-write (1).gif"
 const EnglishMainPage = () => {
   return (
     <>
     <div className='english-main-cont'>
-<h2 className='question'> How old is the child ?</h2>
+<h2 className='question'> How old is your child ?</h2>
 <ul className='chooseStage'>
 <Link  className='link' to="/stageEnglish1"> 0-2 month</Link>
 <Link className='link'to="/stageEnglish2"> 2-4  month</Link>
@@ -23,6 +24,8 @@ const EnglishMainPage = () => {
 </ul>
 
 </div>
+<img className='doctorEnglish' src={doctor} alt="doctor"/>
+
 </>
   )
 }  

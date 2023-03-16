@@ -36,3 +36,8 @@
 .chooseStage .link:hover{
     box-shadow: 2px 2px 2px 2px #00394f;
 }
+.doctor{
+    position:fixed;
+    top: 10%;
+    z-index: -1;
+}

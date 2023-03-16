@@ -1,6 +1,7 @@
 import React from 'react'
 import "./MainPage.css"
 import {Link, Route,Routes} from "react-router-dom"
+import doctor from "../../images/doctor-write (1).gif"
 function MainPage() {
   return (<>
     <div className='mainCont'>
@@ -40,6 +41,8 @@ function MainPage() {
 </ul>
 
 </div>
+<img className='doctor' src={doctor} alt="doctor"/>
+
 </>
   )
 }

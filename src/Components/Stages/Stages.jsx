@@ -4,7 +4,6 @@ import babyfeeding from "../../images/funny-g797f45e5a_1280.png"
 import movement from "../../images/kids-g436434c66_1920-removebg-preview.png"
 import language from "../../images/boyAndGirlLanguage.png"
 import cognition from "../../images/cognition-removebg-preview.png"
-
 import "./Stages.css"
 export default function Stages(props){
   const [isChecked, setIsSubscribed] = useState(true)

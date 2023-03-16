@@ -5,3 +5,9 @@
 .english-main-cont .link:hover{
 box-shadow: 2px 2px 2px 2px #00394f;
 }
+.doctorEnglish{
+    position: fixed;
+    bottom: 10%;
+    left: 70%;
+    z-index: -1;
+}

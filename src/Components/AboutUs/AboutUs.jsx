@@ -1,4 +1,5 @@
 import"./AboutUs.css"
+import doctor from "../../images/doctor-write (1).gif"
 import teamImg1 from"../../images/team-1.jpg"
 import teamImg2 from"../../images/team-2.jpg"
 
@@ -21,6 +22,8 @@ const AboutUs = () => {
 </div>
 </div>
  </div>
+ <img className='doctor' src={doctor} alt="doctor"/>
+
     </>
   )
 }

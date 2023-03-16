@@ -1,11 +1,11 @@
 import React from 'react'
-
+import doctor from "../../images/doctor-write (1).gif"
 const Articles = () => {
   return (
 <>
 <div className='article-container'>
 <h1 className='article-title'>ما هي إضطرابات الكلام </h1>
-<p> تنقسم إضرابات النطق واللغة إلى ثلاثة أقسام وتشمل 
+<p> تنقسم إضرابات النطق واللغة إلى ثلاثة أقسام وتشمل </p>
   <ul>
     <li>
         
@@ -15,8 +15,10 @@ const Articles = () => {
     <li> </li>
     
     </ul>
-</p>
+
 </div>
+<img className='doctor' src={doctor} alt="doctor"/>
+
 </>
   )
 }

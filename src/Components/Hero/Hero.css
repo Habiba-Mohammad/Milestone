@@ -24,7 +24,7 @@ align-items: flex-start;
     color:#00394f;
 
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 840px) {
 .image{
   display: none;
 }
