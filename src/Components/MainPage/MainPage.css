@@ -38,6 +38,7 @@
 }
 .doctor{
     position:fixed;
-    top: 10%;
+    top: 30%;
+    right: 79%;
     z-index: -1;
 }
