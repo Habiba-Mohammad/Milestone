@@ -9,7 +9,7 @@ const AboutUs = () => {
     <div className='mainAbout'>
 <h1 className='about-title'> من نحن ؟ </h1>
 <p className='about-us-info'>   نحن فريق من أخصائيين النطق واللغة ومطورين المواقع ومطورين تطبيقات الهاتف </p>
-<h2 className='about-title'>التعرف أكثر على  فريق العمل </h2>
+{/* <h2 className='about-title'>التعرف أكثر على  فريق العمل </h2>
 
 <div className='img-cont'>
   <div className='team-cont'> 
@@ -20,7 +20,7 @@ const AboutUs = () => {
 <div className='team-cont2'>
 <img className="" src={teamImg2} alt=''/>
 </div>
-</div>
+</div> */}
  </div>
  <img className='doctor' src={doctor} alt="doctor"/>
 
