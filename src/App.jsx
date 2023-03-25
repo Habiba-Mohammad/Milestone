@@ -64,7 +64,7 @@ function App() {
 
 <Nav/>
 <Routes>
-  <Route path="/" element={<>
+  <Route  exact path="/" element={<>
 
 <Hero/>
 <MainPage/>
@@ -72,13 +72,13 @@ function App() {
 {/* <Route path="signUp" element={<><SignUp/> </>}/>  
 <Route path="login" element={<><Login/> </>}/>   */}
 
-<Route path="English" element={<>
+<Route exact path="English" element={<>
 
 <EnglishMainPage/>
 </>}/>  
-<Route path="about" element={<><AboutUs/> </>}/>  
-<Route path="article" element={<><Articles/> </>}/>  
-<Route path="help" element={<><Help/> </>}/>  
+<Route exact path="about" element={<AboutUs/> }/>  
+<Route exact  path="article" element={<Articles/> }/>  
+<Route exact path="help" element={<Help/>}/>  
 
 </Routes>
 

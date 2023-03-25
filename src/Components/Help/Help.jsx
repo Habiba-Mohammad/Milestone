@@ -9,7 +9,7 @@ const Help = () => {
    <div>
     <p > برجاء التواصل معنا عبر الإيميل :<span> mhabibamohamad@gmail.com</span></p>
    <p> التواصل عبر linkedin: <span><a href="https://www.linkedin.com/in/habiba-mohammad-a98703223/" > حبيبة محمد مصطفى </a></span> </p>
-   <p> التواصل عبر الهاتف : </p>
+   {/* <p> التواصل عبر الهاتف : </p> */}
    </div>
    </div>
    <img className='doctor' src={doctor} alt="doctor"/>
