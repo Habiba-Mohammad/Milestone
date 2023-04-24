@@ -64,7 +64,7 @@ export default function StagesEnglish(props){
         
   </>)})}
 
-    <div className="degree">   The baby appears to look like his peers in nutrition at {(feedingScore/props.feeding.length*100).toFixed(2)} </div>
+    <div className="degree">   The baby appears to look like his peers in nutrition at {(feedingScore/props.feeding.length*100).toFixed(2)} %</div>
 
 </div>
 
@@ -84,7 +84,7 @@ export default function StagesEnglish(props){
         </div>
         )
       })}
-    <div className="degree">  The baby appears to look like his peers in communication and language at{(languageScore/props.language.length*100).toFixed(2)}%</div>
+    <div className="degree">  The baby appears to look like his peers in communication and language at {(languageScore/props.language.length*100).toFixed(2)} %</div>
 
       </div>
       <div className="cognition">  
@@ -107,7 +107,7 @@ export default function StagesEnglish(props){
         )
       })
       }
- <div className="degree">  The baby appears to look like his peers in cognition at{(cognitiveScore/props.cognition.length * 100).toFixed(2)}</div>
+ <div className="degree">  The baby appears to look like his peers in cognition at {(cognitiveScore/props.cognition.length * 100).toFixed(2)} %</div>
             </div>
       <div className="social"> 
       <img className="social-boy-girl" src={boyandgirl}/>
@@ -123,7 +123,7 @@ export default function StagesEnglish(props){
         </div>
         )
       })}
-      <div className="degree">  The baby appears to look like his peers in social at{(socialScore/props.social.length*100).toFixed(2)}</div>
+      <div className="degree">  The baby appears to look like his peers in social at {(socialScore/props.social.length*100).toFixed(2)} %</div>
       </div>
       <div className="movement">
       <img className="movement-boy-girl" src={movement}/>
@@ -140,11 +140,11 @@ export default function StagesEnglish(props){
         </div>
         )
       })} 
-<div className="degree">  The baby appears to look like his peers in movement at{(movementScore/props.movement.length*100).toFixed(0)}%</div>
+<div className="degree">  The baby appears to look like his peers in movement at {(movementScore/props.movement.length*100).toFixed(2)} %</div>
 </div>
 
 
-<div className="degree">  Total degree of your child is {(total/totalLength*100).toFixed(0)}%</div>
+<div className="last-degree">  Total degree of your child is {(total/totalLength*100).toFixed(2)} %</div>
  </div>
  </div>) 
 }

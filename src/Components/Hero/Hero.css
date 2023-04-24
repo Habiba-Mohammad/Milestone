@@ -1,5 +1,5 @@
 .mainHero{
-    color: #17a2bB;
+    color: #145a75;
     margin:auto;
     margin-top: 1%;
     padding: auto;
@@ -21,7 +21,7 @@ align-items: flex-start;
 .subTitleHero{
     padding: 10px;
     font-size: 3rem;
-    color:#00394f;
+    color:#17a2b8;
 
 }
 @media only screen and (max-width: 840px) {

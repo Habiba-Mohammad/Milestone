@@ -1,6 +1,6 @@
 import React from 'react'
 import "./MainPage.css"
-import {Link, Route,Routes} from "react-router-dom"
+import {BrowserRouter, Link, Route,Router,Routes} from "react-router-dom"
 import doctor from "../../images/doctor-write (1).gif"
 function MainPage() {
   return (<>
@@ -25,18 +25,18 @@ function MainPage() {
 
 
 <ul className='chooseStage'>
-<Link className='link' to="/stage1"> 0-2 أشهر </Link>
-<Link className='link'to="/stage2"> 2-4 أشهر </Link>
-<Link className='link'to="/stage3"> 4-6 أشهر </Link>
-<Link className='link'to="/stage4"> 6-9 أشهر </Link>
-<Link className='link'to="/stage5"> 9-12 أشهر </Link>
- <Link className='link' to="/stage6">12-15 شهر  ( عام حتى عام وثلاثة أشهر )</Link>
-<Link className='link'to="/stage7"> 15-18 شهر  ( عام وثلاثة أشهر  حتى عام ونصف  )</Link>
-<Link className='link' to="/stage8">18-24 شهر (عام ونصف حتى عامين )</Link>
-<Link className='link' to="/stage9"> 24-30 شهر (عامين حتى عامين ونصف )</Link> 
-<Link className='link' to="/stage10"> 30-36 (عامين ونصف حتى ثلاثة أعوام ) </Link>
-<Link className='link'to="/stage11"> 3-4 سنوات </Link>
-<Link className='link'to="/stage12"> 4-5 سنوات </Link>
+<Link className='link' to="/stage1"> من الولادة حتى شهرين </Link>
+<Link className='link'to="/stage2"> من  عمر شهرين حتى أربعة أشهر </Link>
+<Link className='link'to="/stage3"> من عمر أربعة أشهر حتى ستة أشهر </Link>
+<Link className='link'to="/stage4"> من عمر ستة أشهر حتى تسعة أشهر </Link>
+<Link className='link'to="/stage5"> من عمر تسعة أشهر حتى عام</Link>
+ <Link className='link' to="/stage6">  من عمر عام حتى عام وثلاثة أشهر </Link>
+<Link className='link'to="/stage7">  من عمر عام وثلاثة أشهر  حتى عام ونصف</Link>
+<Link className='link' to="/stage8">من عمر عام ونصف حتى عامين </Link>
+<Link className='link' to="/stage9"> من عمر عامين حتى عامين ونصف </Link> 
+<Link className='link' to="/stage10">من عمر عامين ونصف حتى ثلاثة أعوام  </Link>
+<Link className='link'to="/stage11"> من عمر ثلاث أعوام حتى أربعة أعوام </Link>
+<Link className='link'to="/stage12"> من عمر أربعة أعوام حتى خمسة أعوام </Link>
 <Link className='link'to="/stage12"> أكبر من خمس سنوات </Link>
 </ul>
 

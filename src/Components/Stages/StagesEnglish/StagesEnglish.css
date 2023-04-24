@@ -4,19 +4,19 @@
   direction: ltr;
   font-size: 20px;
 flex-direction: column;
-    color: #17a2bB;
+color: #125662;
     background-color: #eee;
     padding: 2%;
 }
 .stagesEnglish h2 {
-  color: #125662;
+  color: #17a2bB;
   text-indent: -40px;
 }
 .stagesEnglish .form-check-input{
   margin-right: 30px;
 
 }
-.stagesEnglish .feeding  ,.movement ,.cognition{
+.stagesEnglish.feeding  ,.stagesEnglish.movement ,.stagesEnglish.cognition{
   margin-left: 2%;
   line-height:2;
   color: #17a2bB;
@@ -46,10 +46,10 @@ left: 60%;
 
 }
 .stagesEnglish .language , .stagesEnglish .social {
-margin-left:50% ;
+margin-left:45% ;
 width: 100%;
   line-height: 2;
-  color: #17a2bB;
+  color: #125662;
   padding: 2%;
 }
 
@@ -66,19 +66,29 @@ width: 100%;
 
 } 
 .stagesEnglish .degree{
-  color:#1a5e79
+  width: 40%;
 }
+.stagesEnglish .last-degree{
+background-color: #145a75;
+color: white;
+  font-size: 1em;
+  width: 40%;
+  padding: 1%;
+  position:static}
 @media (max-width: 820px) {
 .stagesEnglish img{
   display: none;
 }
-.language ,.social{
-  margin: auto;
+.stagesEnglish .language ,.stagesEnglish  .social{
+  margin: 0px;
 }
 .stagesEnglish h2{
   text-indent:4px;
 }
-.feeding  ,.movement ,.cognition{
+.stagesEnglish .feeding  ,.movement ,.cognition{
     margin: 0;
+
 }
+.stagesEnglish .degree{width: 100%;}
+.stagesEnglish .last-degree{width: 100%;}
 }

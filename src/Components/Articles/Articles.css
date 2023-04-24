@@ -2,6 +2,8 @@
   text-align: center;
   color: #17a2b8;
 }
+.article-container{margin: 1%;
+padding: .5%;}
 .article-container p{
 color: #0d5661;
 }

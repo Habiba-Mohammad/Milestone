@@ -21,7 +21,8 @@ function App() {
   let itemsEnglish=DataEnglish.map(item=>{
     return(<>
       <StagesEnglish
-      key={item.key}
+      key={Date.now()}
+      StageTitle={item.StageTitle}
       title={item.title}
       feedingTitle={item.feedingTitle}
       languageTitle={item.languageTitle}
@@ -37,7 +38,9 @@ function App() {
   let items=Data.map(item=>{
     return(<>
       <Stages
-      Key={item.key}
+      
+      key={Date.now()}
+      StageTitle={item.StageTitle}
       title={item.title}
       feedingTitle={item.feedingTitle}
       languageTitle={item.languageTitle}
@@ -49,10 +52,6 @@ function App() {
       language={item.language}
       cognition={item.cognitive}
       movement={item.movement}/>
-
-      
-
-
 </>
     )
   })
@@ -64,25 +63,15 @@ function App() {
 
 <Nav/>
 <Routes>
-  <Route  exact path="/" element={<>
-
-<Hero/>
-<MainPage/>
-  </>}/>
+  <Route  exact path="/" element={<><Hero/><MainPage/> </>}/>
 {/* <Route path="signUp" element={<><SignUp/> </>}/>  
 <Route path="login" element={<><Login/> </>}/>   */}
+<Route exact path="Arabic" element={<><MainPage/></>}/>  
 
-<Route exact path="English" element={<>
-
-<EnglishMainPage/>
-</>}/>  
+<Route exact path="English" element={<><EnglishMainPage/></>}/>  
 <Route exact path="about" element={<AboutUs/> }/>  
 <Route exact  path="article" element={<Articles/> }/>  
 <Route exact path="help" element={<Help/>}/>  
-
-</Routes>
-
-<Routes>
   <Route path="/stage1" element={items[0]}/> 
   <Route path="/stage2" element={items[1]}/> 
   <Route path="/stage3" element={items[2]}/>
@@ -95,11 +84,6 @@ function App() {
   <Route path="/stage10" element={items[9]}/> 
   <Route path="/stage11" element={items[10]}/> 
   <Route path="/stage12" element={items[11]}/> 
-
-</Routes>
-
-
-<Routes>
   <Route path="/stageEnglish1"  exact element={itemsEnglish[0]}/> 
   <Route path="/stageEnglish2" element={itemsEnglish[1]}/> 
   <Route path="/stageEnglish3" element={itemsEnglish[2]}/>
@@ -121,5 +105,4 @@ function App() {
 </>
   )
 }
-
 export default App

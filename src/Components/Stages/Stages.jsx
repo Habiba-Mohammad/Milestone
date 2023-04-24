@@ -12,6 +12,8 @@ export default function Stages(props){
   const[socialScore,addSocialScore]=useState(0)
   const[cognitiveScore,addCognitiveScore]=useState(0)
   const[movementScore,addMovementScore]=useState(0)
+  let num =0
+
   const total=movementScore+socialScore+languageScore+feedingScore+cognitiveScore
   const totalLength=props.feeding.length+props.language.length+props.movement.length+props.cognition.length+props.social.length
   const handleChangeFeeding = event => {
@@ -43,24 +45,24 @@ export default function Stages(props){
   return(
   <div>
  <div className="stages">
+ <h1 className="StageTitle"> ما يجب على طفلك القيام به  من عمر {props.StageTitle} </h1>
 
 <div className="feeding"> 
+
 <img className="baby-feeding" src={babyfeeding}/>
 
  <h1 >{props.title} </h1>
 <h2> {props.feedingTitle}</h2>
 {props.feeding.map(feeding=>{
-  let num =0
-
         return(<>
-        
-        <div className="form-check">
-        <label className="form-check-label" htmlFor={`feedingCheck${num+1}`}>
+        <div className="form-check" >
+        <input className="form-check-input" type="checkbox" value={isChecked}  onChange={handleChangeFeeding} id={`feedingCheck`}/>
+        <label  className="form-check-label" htmlFor={`feedingCheck${num+1}`}>
            {feeding}
           </label>
-          <input className="form-check-input" type="checkbox" value={isChecked}  onChange={handleChangeFeeding} id={`feedingCheck`}/>
         </div>
-        
+
+      
   </>)})}
 
     <div className="degree">   يتناسب عمر طفلك مع أقرانه في الإطعام بنسبة {(feedingScore/props.feeding.length*100).toFixed(2)} %</div>
@@ -74,11 +76,12 @@ export default function Stages(props){
       <h2> {props.languageTitle}</h2>
 {props.language.map(language=>{
         return(  
-        <div className="form-check">
+        <div   className="form-check">
+    <input className="form-check-input" type="checkbox" value={isChecked} onChange={handleChangeLanguage} id="languageCheck"/>
+
         <label className="form-check-label" htmlFor="languageCheck">
            {language}
           </label>
-        <input className="form-check-input" type="checkbox" value={isChecked} onChange={handleChangeLanguage} id="languageCheck"/>
 
         </div>
         )
@@ -94,11 +97,12 @@ export default function Stages(props){
 {props.cognition.map(cognition=>{
         return(
 
-        <div className="form-check">
+        <div   className="form-check">
+        <input className="form-check-input" type="checkbox" value={isChecked} onChange={handleChangeCognitive} id="cognitionCheck"/>
+
         <label className="form-check-label" htmlFor="cognitionCheck">
            {cognition}
           </label>
-          <input className="form-check-input" type="checkbox" value={isChecked} onChange={handleChangeCognitive} id="cognitionCheck"/>
 
         </div>
   
@@ -114,15 +118,16 @@ export default function Stages(props){
 {props.social.map(social=>{
         return( 
         <div className="form-check">
+                    <input className="form-check-input" type="checkbox" value={isChecked} onChange={handleChangeSocial} id="socialCheck"/>
+
         <label className="form-check-label" htmlFor="socialCheck">
            {social}
           </label>
-          <input className="form-check-input" type="checkbox" value={isChecked} onChange={handleChangeSocial} id="socialCheck"/>
 
         </div>
         )
       })}
-      <div className="degree">   يتناسب عمر طفلك مع أقرانه في الإطعام بنسبة {(socialScore/props.social.length*100).toFixed(2)}</div>
+      <div className="degree">   يتناسب عمر طفلك مع أقرانه في الإطعام بنسبة {(socialScore/props.social.length*100).toFixed(2)} % </div>
       </div>
       <div className="movement">
       <img className="movement-boy-girl" src={movement}/>
@@ -131,19 +136,19 @@ export default function Stages(props){
 {props.movement.map(movement=>{
         return( 
         <div className="form-check">
+       <input className="form-check-input" type="checkbox" value={isChecked} onChange={handleChangeMovement} id="movementCheck"/>
+
         <label className="form-check-label" htmlFor="movementCheck">
            {movement}
           </label>
-          <input className="form-check-input" type="checkbox" value={isChecked} onChange={handleChangeMovement} id="movementCheck"/>
 
         </div>
         )
       })} 
-<div className="degree">   يتناسب عمر طفلك مع أقرانه في الحركة بنسبة{(movementScore/props.movement.length*100).toFixed(0)}%</div>
+<div className="degree"> يتناسب عمر طفلك مع أقرانه في الحركة بنسبة {(movementScore/props.movement.length*100).toFixed(2)}  %</div>
 </div>
-
-
 <div className="last-degree">   يتناسب عمر طفلك مع أقرانه في جميع المستويات بنسبة {(total/totalLength*100).toFixed(0)} %</div>
+<p className="Note">إذا احتجت إلى المزيد من المساعدة يمكنك التوجه إلى أخصائي نطق ولغة .</p>
  </div>
  </div>) 
 }

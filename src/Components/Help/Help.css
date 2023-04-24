@@ -1,6 +1,8 @@
 .help-cont{
-    margin-bottom: 20%;
+    margin: 0% 3% 0% 0%;
+    margin-bottom: 30%;
     color:#17a2bB;
+    font-size: 20px;
 }
 .help-cont h1{
     color:#1a5e79;

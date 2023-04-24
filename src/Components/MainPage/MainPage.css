@@ -11,7 +11,7 @@
     
 }
 .question{
-    color:#00394f;
+    color: #17a2b8;
     font-size: 3rem;
 
 }
@@ -28,17 +28,23 @@
     font-family: 'Harmattan', sans-serif;
 font-size: 25px;
     margin: 3px;
-     color: #17a2b8;
+     color:#145a75;
      cursor:pointer;
    
 }
 
 .chooseStage .link:hover{
-    box-shadow: 2px 2px 2px 2px #00394f;
+    box-shadow: 2px 2px 2px 2px #145a75;
 }
 .doctor{
     position:fixed;
     top: 30%;
     right: 79%;
     z-index: -1;
+}
+
+@media (max-width: 700px) {
+    .chooseStage h2{font-size: 60%;}
+   .mainCont{margin: 0;}
+   .chooseStage .link{margin: 0;}
 }
