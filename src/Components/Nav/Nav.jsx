@@ -18,12 +18,12 @@ const Nav = () => {
 
              <li> <Link className="link"to="/" >الصفحة الرئيسية </Link></li>
               {/* <Link className="link" to="/login">تسجيل الدخول</Link> */}
-              <li> <Link className="link" to='Arabic'>عربي</Link></li>
+              <li> <Link className="link" to='/Arabic'>عربي</Link></li>
 
-             <li> <Link className="link" to='English'>English</Link></li>
-              <li><Link className="link" to="about">تعرف علينا </Link></li>
-            <li> <Link className="link" to="article">مقالات أخرى </Link></li>
-             <li> <Link className="link" to="help">تحتاج إلى مساعدة </Link></li>
+             <li> <Link className="link" to='/English'>English</Link></li>
+              <li><Link className="link" to="/about">تعرف علينا </Link></li>
+            <li> <Link className="link" to="/article">مقالات أخرى </Link></li>
+             <li> <Link className="link" to="/help">تحتاج إلى مساعدة </Link></li>
 
           </ul>
 
