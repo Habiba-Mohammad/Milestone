@@ -63,7 +63,9 @@ function App() {
 
 <Nav/>
 <Routes>
-  <Route  exact path="/" element={<><Hero/><MainPage/> </>}/>
+<Route  exact path="/" element={<><Hero/><MainPage/> </>}/>
+
+  <Route  exact path="Main" element={<><Hero/><MainPage/> </>}/>
 {/* <Route path="signUp" element={<><SignUp/> </>}/>  
 <Route path="login" element={<><Login/> </>}/>   */}
 <Route exact path="Arabic" element={<><MainPage/></>}/>  

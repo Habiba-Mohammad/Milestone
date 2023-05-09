@@ -16,7 +16,7 @@ const Nav = () => {
 </div>
            <ul className='menu'>
 
-             <li> <Link className="link"to="/" >الصفحة الرئيسية </Link></li>
+             <li> <Link className="link"to="/Main" >الصفحة الرئيسية </Link></li>
               {/* <Link className="link" to="/login">تسجيل الدخول</Link> */}
               <li> <Link className="link" to='/Arabic'>عربي</Link></li>
 
