@@ -72,7 +72,7 @@ input[type='checkbox'] {
 }
 .degree{
    color:#17a2bB;
-   border: 3px #145a75 solid;
+   text-indent: -40px;
    width: 40%;
    padding: .5%;
    
@@ -90,14 +90,17 @@ font-size: xx-large;
 }
 @media (max-width: 820px) {
   .degree{width: 100%;
-  border: none;}
+  border: none;
+  text-indent: 0px;
+}
  .stages{margin: 0px}
 .stages img{
   display: none;
 }
 .language .degree,.social .degree{
   width: 90%;
-  border: none
+  border: none;
+  text-indent: 0px
 }
 .language ,.social{
   margin: 0px;
