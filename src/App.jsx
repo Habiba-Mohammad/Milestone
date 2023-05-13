@@ -63,7 +63,7 @@ function App() {
 
 <Nav/>
 <Routes>
-<Route  exact path="/" element={<><Hero/><MainPage/> </>}/>
+<Route  exact path="/Milestone" element={<><Hero/><MainPage/> </>}/>
 
   <Route  exact path="/Main" element={<><Hero/><MainPage/> </>}/>
 {/* <Route path="signUp" element={<><SignUp/> </>}/>  
@@ -73,7 +73,7 @@ function App() {
 <Route exact path="/English" element={<><EnglishMainPage/></>}/>  
 <Route exact path="/about" element={<AboutUs/> }/>  
 <Route exact  path="/article" element={<Articles/> }/>  
-<Route exact path="help" element={<Help/>}/>  
+<Route exact path="/help" element={<Help/>}/>  
   <Route path="/stage1" element={items[0]}/> 
   <Route path="/stage2" element={items[1]}/> 
   <Route path="/stage3" element={items[2]}/>
