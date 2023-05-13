@@ -65,14 +65,14 @@ function App() {
 <Routes>
 <Route  exact path="/" element={<><Hero/><MainPage/> </>}/>
 
-  <Route  exact path="Main" element={<><Hero/><MainPage/> </>}/>
+  <Route  exact path="/Main" element={<><Hero/><MainPage/> </>}/>
 {/* <Route path="signUp" element={<><SignUp/> </>}/>  
 <Route path="login" element={<><Login/> </>}/>   */}
-<Route exact path="Arabic" element={<><MainPage/></>}/>  
+<Route exact path="/Arabic" element={<><MainPage/></>}/>  
 
-<Route exact path="English" element={<><EnglishMainPage/></>}/>  
-<Route exact path="about" element={<AboutUs/> }/>  
-<Route exact  path="article" element={<Articles/> }/>  
+<Route exact path="/English" element={<><EnglishMainPage/></>}/>  
+<Route exact path="/about" element={<AboutUs/> }/>  
+<Route exact  path="/article" element={<Articles/> }/>  
 <Route exact path="help" element={<Help/>}/>  
   <Route path="/stage1" element={items[0]}/> 
   <Route path="/stage2" element={items[1]}/> 
