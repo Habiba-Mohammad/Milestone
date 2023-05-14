@@ -1,4 +1,3 @@
-
 name: Deploy
 
 on:
@@ -12,8 +11,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Build App
-      uses: architect/action-build@v3
+      - name: Checkout repo
+        run: actions/setup-node@v2
+
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v2
+
+      - name: Build project
+        run: npm run build
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3
+        with:
+          name: production-files
+          path: ./dist
 
   deploy:
     name: Deploy
@@ -26,10 +42,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: ./build
+          path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v2
+        uses: peaceiris/actions-gh-pages@v1.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
