@@ -1,0 +1,19 @@
+.Qs-container{
+    padding:3rem;
+    font-size:1.5rem;
+    color:#0d5661
+}
+.Qs-container h1{
+text-align:center;
+font-size:2rem;
+ color: #17a2b8;}
+ .Qs-container h2{
+    color: #17a2b8;
+ }
+ .Qs-container span{
+    color: #17a2b8
+ }
+ li{
+   list-style-type: none;
+
+ }

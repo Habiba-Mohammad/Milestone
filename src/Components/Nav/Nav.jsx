@@ -22,7 +22,8 @@ const Nav = () => {
 
              <li> <Link className="link" to='/English'>English</Link></li>
               <li><Link className="link" to="/about">تعرف علينا </Link></li>
-            <li> <Link className="link" to="/article">مقالات أخرى </Link></li>
+              <li> <Link className="link" to="/qs">مقالات أخرى </Link></li>
+            <li> <Link className="link" to="/article">أسئلة شائعة </Link></li>
              <li> <Link className="link" to="/help">تحتاج إلى مساعدة </Link></li>
 
           </ul>

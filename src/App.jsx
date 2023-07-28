@@ -16,6 +16,7 @@ import DataEnglish from './Data/DataEnglish'
 import StagesEnglish from './Components/Stages/StagesEnglish/StagesEnglish'
 import EnglishMainPage from './Components/EnglishPages/EnglishMainPage/EnglishMainPage'
 import EnglishNav from './Components/Stages/StagesEnglish/EnglishNav/EnglishNav'
+import Qs from './Components/Qs/Qs'
 function App() {
 
   let itemsEnglish=DataEnglish.map(item=>{
@@ -72,7 +73,9 @@ function App() {
 
 <Route exact path="/English" element={<><EnglishMainPage/></>}/>  
 <Route exact path="/about" element={<AboutUs/> }/>  
-<Route exact  path="/article" element={<Articles/> }/>  
+<Route exact  path="/article" element={<Articles/> }/> 
+<Route exact path="/qs" element={<><Qs/></>}/>  
+
 <Route exact path="/help" element={<Help/>}/>  
   <Route path="/stage1" element={items[0]}/> 
   <Route path="/stage2" element={items[1]}/> 

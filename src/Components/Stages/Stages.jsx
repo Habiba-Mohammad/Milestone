@@ -127,7 +127,7 @@ export default function Stages(props){
         </div>
         )
       })}
-      <div className="degree">   يتناسب عمر طفلك مع أقرانه في الإطعام بنسبة {(socialScore/props.social.length*100).toFixed(2)} % </div>
+      <div className="degree">   يتناسب عمر طفلك مع أقرانه في التفاعل الاجتماعي{(socialScore/props.social.length*100).toFixed(2)} % </div>
       </div>
       <div className="movement">
       <img className="movement-boy-girl" src={movement}/>
