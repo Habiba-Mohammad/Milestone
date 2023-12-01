@@ -7,9 +7,24 @@ padding: .5%;}
 .article-container p{
 color: #0d5661;
 }
-.article-container h2{
+.A-container h1 ,.article-container h2{
     color: #17a2b8;
 }
 .article-container ul{
     color: #0d5661;
+}
+.A-link{
+  font-family: 'Harmattan', sans-serif;
+font-size: 25px;
+  margin: 3px;
+   color:#145a75;
+   cursor:pointer;
+   text-decoration:none; 
+}
+.A-container{
+  margin-right:5%;
+  margin-bottom:20%;
+}
+.A-link:hover{
+  box-shadow: 2px 2px 2px 2px #145a75;
 }

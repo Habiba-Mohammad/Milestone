@@ -17,6 +17,8 @@ import StagesEnglish from './Components/Stages/StagesEnglish/StagesEnglish'
 import EnglishMainPage from './Components/EnglishPages/EnglishMainPage/EnglishMainPage'
 import EnglishNav from './Components/Stages/StagesEnglish/EnglishNav/EnglishNav'
 import Qs from './Components/Qs/Qs'
+import Article2 from './Components/Articles/Article2'
+import MainAPage from './Components/Articles/MainAPage'
 function App() {
 
   let itemsEnglish=DataEnglish.map(item=>{
@@ -74,7 +76,7 @@ function App() {
 <Route exact path="/English" element={<><EnglishMainPage/></>}/>  
 <Route exact path="/about" element={<AboutUs/> }/>  
 <Route exact  path="/article" element={<Articles/> }/> 
-<Route exact path="/qs" element={<><Qs/></>}/>  
+<Route exact path="/qs" element={<><MainAPage/></>}/>  
 
 <Route exact path="/help" element={<Help/>}/>  
   <Route path="/stage1" element={items[0]}/> 
@@ -101,12 +103,13 @@ function App() {
   <Route path="/stageEnglish11" element={itemsEnglish[10]}/> 
   <Route path="/stageEnglish10" element={itemsEnglish[9]}/> 
   <Route path="/stageEnglish12" element={itemsEnglish[11]}/> 
+<Route path='/Art1' element={<Qs/>}/>
+<Route path='/Art2' element={<Article2/>}/>
 
 </Routes> 
 {/* <img className='doctor' src={doctor} alt="doctor"/> */}
 
 <Footer/>
-
 </>
   )
 }
