@@ -1,0 +1,14 @@
+.card-grid{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap:20px;
+}
+.Games-container{
+    height:70%
+}
+@media (max-width: 820px){
+    .cardGame{
+        width:100%
+    }
+}

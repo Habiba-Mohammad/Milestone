@@ -1,4 +1,7 @@
 import {React,useState} from 'react'
+import { BrowserRouter, Route,Routes,Link } from 'react-router-dom'
+import  "../node_modules/bootstrap/dist/css/bootstrap.css"
+import  "../node_modules/bootstrap/dist/js/bootstrap";
 import Nav  from './Components/Nav/Nav'
 import './App.css'
 import Hero from"./Components/Hero/Hero"
@@ -8,7 +11,6 @@ import Data from "./Data/Data"
 import Stages from "./Components/Stages/Stages"
 import Footer from './Components/Footer/Footer'
 import MainPage from './Components/MainPage/MainPage';
-import { BrowserRouter, Route,Routes,Link } from 'react-router-dom'
 import AboutUs from './Components/AboutUs/AboutUs'
 import Articles from './Components/Articles/Articles'
 import Help from './Components/Help/Help'
@@ -19,6 +21,7 @@ import EnglishNav from './Components/Stages/StagesEnglish/EnglishNav/EnglishNav'
 import Qs from './Components/Qs/Qs'
 import Article2 from './Components/Articles/Article2'
 import MainAPage from './Components/Articles/MainAPage'
+import Audio from './ListenMainpage/srclistenTOme/components/Audio/Audio.jsX'
 function App() {
 
   let itemsEnglish=DataEnglish.map(item=>{
@@ -65,6 +68,7 @@ function App() {
 <>
 
 <Nav/>
+<Audio/>
 <Routes>
 <Route  exact path="/Milestone" element={<><Hero/><MainPage/> </>}/>
 
