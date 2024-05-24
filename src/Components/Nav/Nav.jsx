@@ -17,14 +17,16 @@ const Nav = () => {
            <ul className='menu'>
 
              <li> <Link className="link"to="/Main" >الصفحة الرئيسية </Link></li>
+             <li><Link className="link" to='/listen'>اسمع</Link></li>
+            <li><Link className="link" to='/GamesMainPage'>العاب</Link></li>
               {/* <Link className="link" to="/login">تسجيل الدخول</Link> */}
               <li> <Link className="link" to='/Arabic'>عربي</Link></li>
 
              <li> <Link className="link" to='/English'>English</Link></li>
-              <li><Link className="link" to="/about">تعرف علينا </Link></li>
+              {/* <li><Link className="link" to="/about">تعرف علينا </Link></li> */}
               <li> <Link className="link" to="/qs">مقالات أخرى </Link></li>
-            <li> <Link className="link" to="/article">أسئلة شائعة </Link></li>
-             <li> <Link className="link" to="/help">تحتاج إلى مساعدة </Link></li>
+            {/* <li> <Link className="link" to="/article">أسئلة شائعة </Link></li>
+             <li> <Link className="link" to="/help">تحتاج إلى مساعدة </Link></li> */}
 
           </ul>
 

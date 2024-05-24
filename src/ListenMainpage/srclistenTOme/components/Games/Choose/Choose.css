@@ -1,0 +1,25 @@
+.audioGame::-webkit-media-controls-panel,
+.audioGame::-webkit-media-controls-enclosure {
+    background-color:var(--Secondary-color);}
+.audioGame::-webkit-media-controls-play-button{
+  background-image:url("../../../../../images/Icons/listining.png");
+}
+.audioGame::-webkit-media-controls-play-button:hover{
+    margin-bottom:20px;
+background-size:auto
+}
+.audio::-webkit-media-controls-play-button:hover{
+   
+}
+.imgChooseGame:hover{
+    border:4px solid var(--Secondary-color)
+}
+@media (max-width: 720px) {
+.audioGame{
+    width:100%
+}
+.imgChooseGameContainer  {
+    display:flex;
+    flex-direction: column;
+}  
+}

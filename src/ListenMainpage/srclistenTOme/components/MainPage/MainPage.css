@@ -1,21 +1,28 @@
+.MainPageCont{
+    margin:3%;
+    padding:3%;
+}
 .card{
     background:(var(--Primary-color));
-    color:var(--third-color);
-    margin:10px;
+    /* color:var(--third-color); */
+    margin:1%
 
 }
-.MainPageCont{
-    padding:20px;
-    position:relative
+
+.button_wrapper{
+    text-decoration:none ;
+    /* color:(var(Secondary-color)); */
+    font-size: 30px;
+    font-weight:bold;
+    color:#17a2b8;
 
 }
 .MainPageCont .card{
-    border: solid 2px var(--Secondary-color);
+    border: solid 2px (var(Secondary-color));
     /* background:var(--Secondary-color); */
 
 }
-.MainPageCont img{
-}
+
 .main-button{
    background-color: var(--third-color);
     color:var(--Secondary-color);
@@ -27,8 +34,13 @@
         width:80%;
         font-size:15px 
     }
+    .MainPageCont img{
+        width:100%
+    }
 }
 @media (max-width: 900px){
+    .MainPageCont{margin:20px;
+    align-items:center}
     .MainPageCont .card{
         width:70%;
     }

@@ -7,9 +7,12 @@ font-family: 'Harmattan', sans-serif;}
 
 :root {
   --Primary-color:#17a2b8;
+  --Secondary-color:#145a75
     }
 @media (max-width: 820px) {
-img{display: none;}
+  
+  .mainHero .childImage{display: noneoo;
+}
 
   }
   @media (max-width: 1386px) {

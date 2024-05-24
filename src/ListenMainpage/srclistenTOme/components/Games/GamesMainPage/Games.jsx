@@ -1,21 +1,37 @@
 import React, { useEffect, useState } from 'react'
-import src1 from'../../../images/Duck.jpg'
-import src2 from'../../../images/cow.jpg'
-import src3 from'../../../images/dog.jpg'
-import src4 from'../../../images/sheep.jpg'
+//animals4
+import src1 from'../../../../../images/AnimalsImages/Duck.jpg'
+import src2 from'../../../../../images/AnimalsImages/cow.jpg'
+import src3 from'../../../../../images/AnimalsImages/dog.jpg'
+import src4 from'../../../../../images/AnimalsImages/sheep.jpg'
 //transports6
-import srcMotorcycle from'../../../images/transportationsImages/pexels-pixabay-163789.jpg'
-import srccar from'../../../images/transportationsImages/car.jpg'
-import srctrain from'../../../images/transportationsImages/train.jpg'
-import srcambulance from'../../../images/transportationsImages/ambulance (1).jpg'
-import srcPolice from'../../../images/transportationsImages/police.jpg'
-import srcship from'../../../images/transportationsImages/ship.jpg'
-
+import srcMotorcycle from'../../../../../images/transportationsImages/bike.jpg'
+import srccar from'../../../../../images/transportationsImages/car.jpg'
+import srctrain from'../../../../../images/transportationsImages/train.jpg'
+import srcambulance from'../../../../../images/transportationsImages/ambulance (1).jpg'
+import srcPolice from'../../../../../images/transportationsImages/police.jpg'
+import srcship from'../../../../../images/transportationsImages/ship.jpg'
+//Vegetables12
+import srccucmber from'../../../../../images/vegetables/cucmber.jpg'
+import srccabage from'../../../../../images/vegetables/cabage.jpg'
+import srccarrot from'../../../../../images/vegetables/carrot.jpg'
+import srcbamia from'../../../../../images/vegetables/bamia.jpg'
+import srcbangar from'../../../../../images/vegetables/bangar.jpg'
+import srcbeas from'../../../../../images/vegetables/beas.jpg'
+import srccouliFlower from'../../../../../images/vegetables/couli-flower.jpg'
+import srceggPlanet from'../../../../../images/vegetables/egg-planet.jpg'
+import srconion from'../../../../../images/vegetables/onion.jpg'
+import srccupotatos from'../../../../../images/vegetables/potatos.jpg'
+import srctomato from'../../../../../images/vegetables/Tomato.jpg'
+import srczuccini from'../../../../../images/vegetables/zuccini.jpg'
+import one from "../../../../../images/Icons/1.jfif"
+import two  from "../../../../../images/Icons/2.jfif"
+import three from "../../../../../images/Icons/3.jfif"
 //
-import cat from "../../../audio/cat.wav"
-import dog from "../../../audio/dog.wav"
-import cow from "../../../audio/cow.wav"
-import sheep from "../../../audio/goat.wav"
+// import cat from "../../../audio/cat.wav"
+// import dog from "../../../audio/dog.wav"
+// import cow from "../../../audio/cow.wav"
+// import sheep from "../../../audio/goat.wav"
 import "./Games.css"
 // import src1 from '../../../audio/cat.wav'
 // import src2 from '../../../audio/cat.wav'
@@ -37,6 +53,20 @@ const CardImages2=[
   {'src':srccar,matched:false},
   {'src':srcship,matched:false},
   {'src':srctrain,matched:false},
+]
+const CardImages3=[
+  {'src':srcbamia,matched:false},
+  {'src':srcbangar,matched:false},
+  {'src':srcbeas,matched:false},
+  {'src':srccabage,matched:false},
+  {'src':srccouliFlower,matched:false},
+  {'src':srccarrot,matched:false},
+  {'src':srccucmber,matched:false},
+  {'src':srceggPlanet,matched:false},
+  {'src':srccupotatos,matched:false},
+  {'src':srconion,matched:false},
+  {'src':srctomato,matched:false},
+  {'src':srczuccini,matched:false},
 ]
 // const CardSound=[
 //   {'src':cat,matched:false},
@@ -60,6 +90,14 @@ setTurns(0)
 }
 const shuffleCards2=()=>{
   const shuffledCards=[...CardImages2,...CardImages2]
+  .sort(()=>Math.random()-0.5)
+.map((card)=>({...card,id:Math.random()}))
+
+setCards(shuffledCards)
+setTurns(0)
+}
+const shuffleCards3=()=>{
+  const shuffledCards=[...CardImages3,...CardImages3]
   .sort(()=>Math.random()-0.5)
 .map((card)=>({...card,id:Math.random()}))
 
@@ -104,13 +142,22 @@ const resetTurn=()=>{
 }
   return (
     <>
-    <h1 >كيف حال ذاكرة طفلك البصرية  </h1>
-    <h2>هيا بنا نبدأ اللعب </h2>
-    <button onClick={shuffleCards} > هيا بنا </button>
-    <button onClick={shuffleCards2} > hhhhهيا بنا </button>
-
+    <div className='row space-between m-4 d-flex'>
+    <h1 className='text-center fs-4 '>لعبة الذاكرة البصرية</h1>
+    <div className='row m-3  p-3 justify-content-center d-flex'>
+    <button className='fs-4 w-25' onClick={shuffleCards} >
+      <img className='w-100' src={one} />
+       المرحلة الأولى </button>
+    <button className='fs-4 w-25' onClick={shuffleCards2} > 
+    <img className='w-75' src={two}/>
+المرحلة الثانية</button>
+    <button  className='fs-4 w-25' onClick={shuffleCards3} >
+    <img className='w-100' src={three}/>
+ المرحلة الثالثة</button>
+    </div>
+    </div>
     <div className='container Games-container'>
-    <div className='flex row   '>
+    <div className='flex row  '>
       {cards.map(card=>(
        <SingleCard 
        key={card.id} 
@@ -123,7 +170,7 @@ const resetTurn=()=>{
     </div>
 
 
-    <p>Turns :{turns}</p>
+    <p>المحاولات:{turns}</p>
 
     </div>
     </>

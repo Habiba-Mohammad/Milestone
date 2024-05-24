@@ -52,8 +52,10 @@ margin-right: 60% ;
      padding: 1%;
      margin-bottom: 7%;
 }
-input[type='checkbox'] {
-  accent-color:  #17a2bB;
+.form-check-input:checked{
+  background-color:  #17a2bB;;
+    border-color:  #17a2bB;;
+
 }
 .language .degree,.social .degree{
   width: 90%;

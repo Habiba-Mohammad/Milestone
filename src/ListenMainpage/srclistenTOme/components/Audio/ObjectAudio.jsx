@@ -1,14 +1,13 @@
 import React from 'react'
 import ReactAudioPlayer from 'react-audio-player';
-import { objectData} from '../Data';
-import { useState } from 'react';
+import { outSideHome } from '../../../../Data/ListenData';
 import "./Audio.css"
 const ObjectAudio = () => {
 
   return (
    <>
 <div className='d-flex align-items-center m-4 row'>
-  {objectData.map((item=>{
+  {outSideHome.map((item=>{
    return (
     <>
 <div className=' Audio-container audio-player col-4 col-sm-3 m-2 p-3 '>

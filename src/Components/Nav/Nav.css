@@ -7,14 +7,13 @@
   background-color: #17a2b8;
   color: #FFF;
   height: 30px;
-  padding: 1em;
+  padding: 1.5em;
+  margin:.2em
 }
 .menu {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 .menu >  li {
   margin: 0 1rem;
@@ -97,8 +96,7 @@
 @media (max-width: 700px) {
   .logo{
     position: relative;
-    right: 0%;
-    right: 80%;
+    right: 10%; 
   }
   .Nav-bar{
     font-size: 1em;
@@ -109,7 +107,7 @@
 /* bugggggg */
 .menu {
   position: relative;
-  top: 170px;
+  top: 140px;
   left: 30%;
   /* margin-top: 10%;
   margin-bottom:0%;

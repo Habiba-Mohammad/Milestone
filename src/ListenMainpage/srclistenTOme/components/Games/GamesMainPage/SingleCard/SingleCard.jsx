@@ -1,6 +1,7 @@
 import React from 'react'
 import "./SingleCard.css"
-import questionMark from "../../../../images/questionMark.jpg"
+import questionMark from "../../../../../../images/Icons/questionMark.jfif"
+
 
 
 const SingleCard = ({card,handleChoice,flipped,disabled}) => {

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
-import Hero from '../../../Hero/Hero'
+// import Hero from '../../../Hero/Hero'
 const Puzzle = () => {
 const[name,setname]=useState()
 const[posts,setPosts]=useState([])

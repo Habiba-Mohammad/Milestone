@@ -21,7 +21,17 @@ import EnglishNav from './Components/Stages/StagesEnglish/EnglishNav/EnglishNav'
 import Qs from './Components/Qs/Qs'
 import Article2 from './Components/Articles/Article2'
 import MainAPage from './Components/Articles/MainAPage'
-import Audio from './ListenMainpage/srclistenTOme/components/Audio/Audio.jsX'
+import MainListenPage from "./ListenMainpage/srclistenTOme/components/MainPage/MainPage"
+//
+import AnimalSounds from './ListenMainpage/srclistenTOme/components/Audio/Audio.jsX'
+import ObjectSounds from './ListenMainpage/srclistenTOme/components/Audio/ObjectAudio'
+import Transportations from "./ListenMainpage/srclistenTOme/components/Audio/Transport"
+import Games from './ListenMainpage/srclistenTOme/components/Games/GamesMainPage/Games';
+import GamesMainPage from './ListenMainpage/srclistenTOme/components/Games/GamesMainPage/GamesMainPage';
+import InsideHome from './ListenMainpage/srclistenTOme/components/Audio/insideHouse';
+import VerbsAudio from './ListenMainpage/srclistenTOme/components/Audio/VerbsAudio';
+import Choose from "./ListenMainpage/srclistenTOme/components/Games/Choose/Choose"
+import { selectGame } from './Data/ListenData';
 function App() {
 
   let itemsEnglish=DataEnglish.map(item=>{
@@ -68,11 +78,11 @@ function App() {
 <>
 
 <Nav/>
-<Audio/>
+{/* <Audio/> */}
 <Routes>
-<Route  exact path="/Milestone" element={<><Hero/><MainPage/> </>}/>
+<Route  exact path="/Milestone" element={<><Hero/> </>}/>
 
-  <Route  exact path="/Main" element={<><Hero/><MainPage/> </>}/>
+  <Route  exact path="/Main" element={<><Hero/></>}/>
 {/* <Route path="signUp" element={<><SignUp/> </>}/>  
 <Route path="login" element={<><Login/> </>}/>   */}
 <Route exact path="/Arabic" element={<><MainPage/></>}/>  
@@ -81,7 +91,6 @@ function App() {
 <Route exact path="/about" element={<AboutUs/> }/>  
 <Route exact  path="/article" element={<Articles/> }/> 
 <Route exact path="/qs" element={<><MainAPage/></>}/>  
-
 <Route exact path="/help" element={<Help/>}/>  
   <Route path="/stage1" element={items[0]}/> 
   <Route path="/stage2" element={items[1]}/> 
@@ -109,10 +118,17 @@ function App() {
   <Route path="/stageEnglish12" element={itemsEnglish[11]}/> 
 <Route path='/Art1' element={<Qs/>}/>
 <Route path='/Art2' element={<Article2/>}/>
-
+<Route path='/ListentoTransports' element={<Transportations/>}/>
+<Route path='/ListentoAnimals' element={<AnimalSounds/>}/>
+<Route path='/ListentoOutside' element={<ObjectSounds/>}/>
+<Route path='/ListentoInsideHouse' element={<InsideHome/>}/>
+<Route path='/ListenToVerbs' element={<VerbsAudio/>}/>
+<Route path='//listen' element={<MainListenPage />}/>
+<Route path='/GamesMainPage' element={<GamesMainPage/>}/>
+<Route path='/MemoryGame' element={<Games/>}/>
+<Route path='/listiningGame' element={<Choose />}/>
 </Routes> 
 {/* <img className='doctor' src={doctor} alt="doctor"/> */}
-
 <Footer/>
 </>
   )
