@@ -36,7 +36,7 @@ export default function Hero(){
     
     <div className="contentHero col-5"> 
     <Link  className="Herolink" to={'/listen'}>
-    <h3 className="subTitleHero  "> اسمع</h3>
+    <h3 className="subTitleHero"> اسمع</h3>
 
 <img className="childImage  " src={HearingAid} alt="سماعة "/>
 <p>يمكنك تطوير مهارات طفلك السمعية من خلال الإستماع لأصوات مختلفة ,<br/>

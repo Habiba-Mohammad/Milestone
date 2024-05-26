@@ -4,8 +4,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #17a2b8;
-  color: #FFF;
+  /* background-color: red ; */
+  color: var(--Secondary-color);
   height: 30px;
   padding: 1.5em;
   margin:.2em
@@ -18,6 +18,9 @@
 .menu >  li {
   margin: 0 1rem;
   overflow: hidden;
+}
+.menu >  li:hover{
+border-bottom:solid 2px #17a2b8
 }
 .Nav-bar .menu-button-container {
   display: none;
@@ -37,7 +40,7 @@
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: var(--Secondary-color);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -108,7 +111,7 @@
 .menu {
   position: relative;
   top: 140px;
-  left: 30%;
+  left: 50%;
   /* margin-top: 10%;
   margin-bottom:0%;
   left: 0; */
@@ -148,7 +151,10 @@
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    background-color:#17a2b8;
+    background-color:#eeee;
+  }
+  .menu > li::hover{
+    border-bottom:solid 2px var(--Secondary-color)
   }
 
   .menu > li:not(:last-child) {
@@ -156,7 +162,7 @@
   }
 }
 .link{
-  color: white;
+  color: var(--Secondary-color);
   text-decoration-line:none ;
   -moz-text-decoration-line:none }
 /* /* {primary-color:#00394f;

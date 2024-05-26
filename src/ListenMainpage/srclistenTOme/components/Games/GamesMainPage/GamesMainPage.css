@@ -1,0 +1,16 @@
+.GameMainPage{
+    color:var(--Secondary-color);
+    text-decoration:none;
+    
+}
+@media (max-width: 700px){
+.GameMainPage  {
+    display:flex;
+    
+
+}
+.GameMainPage div {
+    flex-direction: column;
+
+}
+}

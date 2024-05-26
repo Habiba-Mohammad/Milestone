@@ -78,6 +78,7 @@ import seaImg from "../images/outsideHome/sea.jpg"
 import thuderImg from "../images/outsideHome/thuder.jpeg"
 import swardImg from "../images/outsideHome/sword.jpg"
 import shoutImg from "../images/outsideHome/pexels-skitterphoto-370202.jpg"
+import leaveImg from "../images/outsideHome/leave.jpg"
 
 //insideHome
 import blender from "../ListenMainpage/srclistenTOme/AudioSounds/objectsSounds/blender.mp3"
@@ -127,7 +128,8 @@ import sneezImg from "../images/verbsImages/sneez.jpg"
 import coughImg from "../images/verbsImages/cough.jpg"
 import runImg from "../images/verbsImages/run.jpg"
 import breatheImg from "../images/verbsImages/breathe.jpg"
- import leaveImg from "../images/outsideHome/leave.jpg"
+ import vomitImg from "../images/verbsImages/Vomit.jfif"
+
 // import leave from "../ListenMainpage/srclistenTOme/AudioSounds/verbsSounds/"
 // import leave from "../ListenMainpage/srclistenTOme/AudioSounds/verbsSounds"
 // import leave from "../ListenMainpage/srclistenTOme/AudioSounds/verbsSounds"
@@ -197,55 +199,53 @@ sound:dog,
  sound:sheep,
  },
  
- {id:7,
+ {id:5,
   name:'بطة',
   image:duckImage,
   sound:duck,
      },
      
-   {id:9,
+   {id:6,
     name:'ديك',
     image:roosterImage,
     sound:rooster,
     },
-    {id:10,
+    {id:7,
         name:'حصان',
         image:horseImage,
         sound:horse,
         },
-  {id:5,
+  {id:8,
       name:'فيل',
       image:elephantImage,
       sound:elephant,
       },
-
-  
-        {id:11,
+        {id:9,
             name:'قرد',
             image:monkeyImage,
             sound:monkey,
             },
-            {id:12,
+            {id:10,
                 name:'أسد',
                 image:lionImage,
                 sound:lion,
                 },
-                {id:6,
+                {id:11,
                     name:"بومة ",
                     image:owlImage,
       sound:owl,
           },
-      {id:8,
+      {id:12,
       name:'غراب ',
       image:crowImage,
       sound:crow,
           },
-          {id:14,
+          {id:13,
               name:'غراب ',
               image:crowImage,
               sound:bird,
                   },
-                {id:13,
+                {id:14,
                     name: "ضفدع",
                     image:frogImage,
                     sound:frog,
@@ -264,7 +264,7 @@ sound:dog,
 export const insideHome=[ 
     {id:1,
     name: 'الطرق على الباب',
-    image:KnockImage,
+    image:ringImg,
  sound:knockingDoor,
         },
       {  
@@ -466,7 +466,7 @@ export const verbs =[
             },
  {id:10,
         name: "يتقئ",
-        image:dMan,
+        image:vomitImg,
      sound:vomit,
             },
 ]

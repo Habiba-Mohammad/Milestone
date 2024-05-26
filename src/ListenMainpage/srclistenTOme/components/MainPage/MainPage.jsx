@@ -12,12 +12,12 @@ const MainPage = () => {
     return<>
 
     <div className="card col-4  p-5 " >
-
+    <Link to={`/${item.link}`} className="button_wrapper">
   <img src={item.image} className="   " alt="..."/>
   <span className="button">
-        <Link to={`/${item.link}`} className="button_wrapper">{item.name}</Link>
+        {item.name}
         </span>
-
+        </Link>
 
       </div>
       

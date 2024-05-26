@@ -6,7 +6,7 @@ const ObjectAudio = () => {
 
   return (
    <>
-<div className='d-flex align-items-center m-4 row'>
+<div className=' row  d-flex Main-Audio-Container   m-4 row'>
   {outSideHome.map((item=>{
    return (
     <>
@@ -17,7 +17,7 @@ const ObjectAudio = () => {
   
   controls
 />
-<p className='Primary-color text-center font-weight-bold fs-5'> {item.name}</p>
+<p className='Primary-color  font-weight-bold fs-5'> {item.name}</p>
 </div>
     </>
    )
