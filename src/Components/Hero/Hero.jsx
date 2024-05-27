@@ -45,7 +45,7 @@ export default function Hero(){
 
 </div>
 <div className="contentHero  col-5">
-<Link className="Herolink" to={'/listen'}> 
+<Link className="Herolink" to={'/GamesMainPage'}> 
 <h3 className="subTitleHero "> العاب</h3>
 
 <img className="childImage  " src={Playing} alt="سماعة "/>

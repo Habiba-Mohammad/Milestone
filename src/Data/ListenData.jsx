@@ -31,9 +31,8 @@ import roosterImage from "../images/AnimalsImages/Rosster.jpg"
 import lionImage from "../images/AnimalsImages/lion (1).jpg"
 import monkeyImage from "../images/AnimalsImages/monkey.jpg"
 import frogImage from "../images/AnimalsImages/frog.jpg"
-import dMan from "../images/AnimalsImages/3d-man.png"
 import horseImage from "../images/AnimalsImages/horse.jpg"
-import FarmAnimals from "../images/AnimalsImages/farmAnimals.png"
+import birdImg from "../images/AnimalsImages/bird.jpg"
 import elephantImage from "../images/AnimalsImages/elephant.jpg"
 //transport data
 import bike from "../ListenMainpage/srclistenTOme/AudioSounds/transportSounds/bike-bell-100665.mp3"
@@ -44,7 +43,7 @@ import truck from "../ListenMainpage/srclistenTOme/AudioSounds/transportSounds/t
 import ambulance from "../ListenMainpage/srclistenTOme/AudioSounds/transportSounds/ambulance.mp3"
 import car from "../ListenMainpage/srclistenTOme/AudioSounds/transportSounds/car-horn-155026.mp3"
 import police from "../ListenMainpage/srclistenTOme/AudioSounds/transportSounds/police.mp3"
-import motorCycle from "../ListenMainpage/srclistenTOme/AudioSounds/transportSounds/police.mp3"
+import motorCycle from "../ListenMainpage/srclistenTOme/AudioSounds/transportSounds/passing-motorcycle-99323.mp3"
 //transportationsImages
 import carImage from "../images/transportationsImages/car.jpg"
 import boatImage from "../images/transportationsImages/ship.jpg"
@@ -55,7 +54,6 @@ import policeImage from "../images/transportationsImages/police.jpg"
 import ambulanceImage from "../images/transportationsImages/ambulance (1).jpg"
 import motorCycleImage from "../images/transportationsImages/pexels-pixabay-163789.jpg"
 import bikeImage from "../images/transportationsImages/bike.jpg"
-
 
 //insideImages
 import glassBreakImg from "../images/outsideHome/breakGlass.jpg"
@@ -79,6 +77,10 @@ import thuderImg from "../images/outsideHome/thuder.jpeg"
 import swardImg from "../images/outsideHome/sword.jpg"
 import shoutImg from "../images/outsideHome/pexels-skitterphoto-370202.jpg"
 import leaveImg from "../images/outsideHome/leave.jpg"
+import zipImg from "../images/outsideHome/zip.jpg"
+import HorseRunImg from "../images/outsideHome/HorseRun.jpg"
+import CarWarImg from "../images/outsideHome/carWar.jpg"
+import waterRunImg from "../images/outsideHome/waterRun.jpg"
 
 //insideHome
 import blender from "../ListenMainpage/srclistenTOme/AudioSounds/objectsSounds/blender.mp3"
@@ -241,8 +243,8 @@ sound:dog,
       sound:crow,
           },
           {id:13,
-              name:'غراب ',
-              image:crowImage,
+              name:'عصفورة',
+              image:birdImg,
               sound:bird,
                   },
                 {id:14,
@@ -280,7 +282,7 @@ export const insideHome=[
     {
         id:4,
         name:'سوستة',
-        image:glassBreakImg,
+        image:zipImg,
         sound:zip
     },
     {
@@ -313,12 +315,7 @@ export const insideHome=[
         image:openDoorImg,
         sound:openDoor
     },
-    {
-        id:10,
-        name:'لوحة مفاتيح',
-        image:keybordImg,
-        sound:keybordImg
-    },]
+]
 export const outSideHome=[
     {
     id:1,
@@ -365,7 +362,7 @@ export const outSideHome=[
 {
     id:4,
     name:'إنذار سيارة',
-    image:glassBreakImg,
+    image:CarWarImg,
     sound:carRing
 },
 {
@@ -377,7 +374,7 @@ export const outSideHome=[
 {
     id:6,
     name:'جريان الماء',
-    image:glassBreakImg,
+    image:waterRunImg,
     sound:water
 },
 // {
@@ -402,13 +399,7 @@ export const outSideHome=[
 {
     id:12,
     name:'جري حصان',
-    image:glassBreakImg,
-    sound:horsegalop
-},
-{
-    id:13,
-    name:'جري حصان',
-    image:glassBreakImg,
+    image:HorseRunImg,
     sound:horsegalop
 },
 {

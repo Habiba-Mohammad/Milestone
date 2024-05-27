@@ -3,11 +3,19 @@
     text-decoration:none;
     
 }
+.GameMainPage h2:hover{
+    border-bottom:2px solid var(--Primary-color)
+}
 @media (max-width: 700px){
 .GameMainPage  {
-    display:flex;
-    
 
+}
+.GameMainPage h2{
+    font-size:100%;
+    margin:4%
+}
+.GameMainPage img{
+    width:50%
 }
 .GameMainPage div {
     flex-direction: column;
