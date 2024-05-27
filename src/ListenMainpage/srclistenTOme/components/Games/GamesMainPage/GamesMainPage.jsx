@@ -6,6 +6,7 @@ import "./GamesMainPage.css"
 const GamesMainPage=()=>{
     return(<>
     <div className="container GameMainPage">
+        
 <h1 className="  text-center m-3  "> هيا نلعب </h1>
 
     <div className=" d-flex row">
