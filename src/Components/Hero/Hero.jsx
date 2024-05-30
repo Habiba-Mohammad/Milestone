@@ -19,20 +19,7 @@ export default function Hero(){
  اضغط هنا </Link> 
  </div>
 
- {/*   <ul>
-        <li>التغذية والتي تشمل
-            <ul>
-            <li>المهارات  الفمية الحركية </li>
-            <li>التغذية </li>
-            <li>العناصر الغذائية المقدمة للطفل </li>
-            </ul>
-        </li>
-        <li> التفاعل الاجتماعي</li>
-        <li> التواصل واللغة </li>
-        <li> الإدراك </li>
-        <li> الحركة </li>
 
-    </ul> */}
     
     <div className="contentHero col-5"> 
     <Link  className="Herolink" to={'/listen'}>
