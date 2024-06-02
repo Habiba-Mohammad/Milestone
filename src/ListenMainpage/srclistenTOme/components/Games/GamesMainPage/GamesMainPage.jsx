@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import MemoryGameImage from  "../../../../../images/Icons/memory-game.png"
-import ListenGameImage from  "../../../../../images/Icons//ear.png"
+import ListenGameImage from  "../../../../../images/Icons/ear.jfif"
 
 import "./GamesMainPage.css"
 const GamesMainPage=()=>{
