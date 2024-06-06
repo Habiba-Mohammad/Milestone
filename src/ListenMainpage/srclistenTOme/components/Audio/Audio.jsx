@@ -13,7 +13,6 @@ const Audio = ({card,handleChoice,flipped,disabled}) => {
     <>
  
 <div className=' Audio-container  audio-player col-4 col-sm-3 m-2 p-3 '>
-
 <img className="  m-2  p-1" src={item.image} />
 <ReactAudioPlayer
 

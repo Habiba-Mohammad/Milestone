@@ -11,11 +11,11 @@ const GamesMainPage=()=>{
 
     <div className=" d-flex row">
 
-        <div className="col  p-3 ">
-           <Link to={'/MemoryGame'} className="GameMainPage text-center m-4"> <img src={MemoryGameImage}/> <h2>الذاكرة البصرية</h2> </Link> 
+        <div className="col p-3 ">
+           <Link to={'/MemoryGame'} className="GameMainPage w-25  m-4"> <img className='w-75' src={MemoryGameImage}/> <h2 className="text-center mt-4">الذاكرة البصرية</h2> </Link> 
         </div>
         <div className="col p-3  ">
-           <Link to={'/listiningGame'} className="GameMainPage text-center m-4 "> <img src={ListenGameImage}/> <h2>الذاكرة السمعية </h2></Link> 
+           <Link to={'/listiningGame'} className="GameMainPage w-25 m-4 "> <img className=" w-75" src={ListenGameImage}/> <h2 className="text-center mt-4">الذاكرة السمعية </h2></Link> 
         </div>
     </div>
     </div>

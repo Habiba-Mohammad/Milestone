@@ -27,7 +27,7 @@ transition: 1s ease;
 .audio {
     color:var(--Primary-color) ;
     text-shadow: none; 
-    width:60%;
+    width:75%;
 
 
 }

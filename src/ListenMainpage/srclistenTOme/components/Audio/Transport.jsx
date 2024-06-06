@@ -7,7 +7,7 @@ const TransportAudio = () => {
   return (
    <>
 <div className=' row  d-flex Main-Audio-Container   m-4 row'>
-q  {transportData.map((item=>{
+ {transportData.map((item=>{
    return (
     <>
 <div className=' Audio-container  audio-player col-4 col-sm-3 m-2 p-3 '>

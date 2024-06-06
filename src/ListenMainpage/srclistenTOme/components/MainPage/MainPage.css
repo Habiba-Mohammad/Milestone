@@ -22,7 +22,9 @@
     /* background:var(--Secondary-color); */
 
 }
-
+.MainPageCont img{
+    height:15rem
+}
 .main-button{
    background-color: var(--third-color);
     color:var(--Secondary-color);

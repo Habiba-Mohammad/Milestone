@@ -5,7 +5,8 @@
     grid-gap:20px;
 }
 .Games-container{
-    height:70%
+    display:flex;
+    
 }
 @media (max-width: 820px){
     .cardGame{

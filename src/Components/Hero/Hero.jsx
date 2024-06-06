@@ -1,13 +1,13 @@
 import"./Hero.css"
 import Assessment from "../../images/mainImage/header.jfif" 
-import HearingAid from "../../images/mainImage/HearingAid.png"
-import Playing from "../../images/mainImage/Premium Vector _ Happy cute little kid boy and girl play jigsaw puzzle.jfif" 
+import HearingAid from "../../images/mainImage/HearingAid.jfif"
+import Playing from "../../images/mainImage/4e2bfff9-b125-4490-a301-c3600924ac59.jfif" 
 import { Link } from "react-router-dom"
 export default function Hero(){
     return(<>
     <div className="container mainHero">
-    <div className="mainHero  row ">
-    <div className="contentHero  col-5"> 
+    <div className="mainHero   ">
+    <div className="contentHero col-4  "> 
     <Link className="Herolink" to={'/Arabic'}>
     <h3 className="subTitleHero"> تقييم تطور طفلك</h3>
 
@@ -21,17 +21,17 @@ export default function Hero(){
 
 
     
-    <div className="contentHero col-5"> 
+    <div className="contentHero col-4"> 
     <Link  className="Herolink" to={'/listen'}>
     <h3 className="subTitleHero"> اسمع</h3>
 
 <img className="childImage  " src={HearingAid} alt="سماعة "/>
-<p>يمكنك تطوير مهارات طفلك السمعية من خلال الإستماع لأصوات مختلفة ,<br/>
+<p>يمكنك تطوير مهارات طفلك السمعية من خلال الإستماع لأصوات مختلفة <br/>
 </p>
  اضغط هنا </Link>
 
 </div>
-<div className="contentHero  col-5">
+<div className="contentHero  col-4">
 <Link className="Herolink" to={'/GamesMainPage'}> 
 <h3 className="subTitleHero "> العاب</h3>
 

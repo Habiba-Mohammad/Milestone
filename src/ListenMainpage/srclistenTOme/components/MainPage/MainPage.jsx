@@ -13,7 +13,7 @@ const MainPage = () => {
 
     <div className="card col-4  p-5 " >
     <Link to={`/${item.link}`} className="button_wrapper">
-  <img src={item.image} className="   " alt="..."/>
+  <img src={item.image} className="" alt="..."/>
   <span className="button">
         {item.name}
         </span>

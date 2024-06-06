@@ -40,6 +40,7 @@ import "./Games.css"
 import { ResetTv } from '@mui/icons-material'
 import SingleCard from './SingleCard/SingleCard'
 import Puzzle from './Puzzle/Puzzle'
+import { Link } from 'react-router-dom'
 const CardImages=[
   {'src':src1,matched:false},
   {'src':src2,matched:false},
@@ -142,22 +143,25 @@ const resetTurn=()=>{
 }
   return (
     <>
-    <div className='row space-between m-4 d-flex'>
-    <h1 className='text-center fs-4 '>لعبة الذاكرة البصرية</h1>
+    <div className='MemoryGameCont row space-between m-4 d-flex'>
+    <h1 className='text-center link  '>لعبة الذاكرة البصرية</h1>
     <div className='row m-3  p-3 justify-content-center d-flex'>
-    <button className='fs-4 w-25' onClick={shuffleCards} >
+
+    <Link className='fs-4 w-25 text-center link' onClick={shuffleCards} >
       <img className='w-100' src={one} />
-       المرحلة الأولى </button>
-    <button className='fs-4 w-25' onClick={shuffleCards2} > 
-    <img className='w-75' src={two}/>
-المرحلة الثانية</button>
-    <button  className='fs-4 w-25' onClick={shuffleCards3} >
+       المرحلة الأولى </Link>
+    <Link className='fs-4 w-25 text-center link' onClick={shuffleCards2} > 
+    <img className='w-100' src={two}/>
+المرحلة الثانية</Link>
+    <Link  className='fs-4 w-25 text-center link' onClick={shuffleCards3} >
     <img className='w-100' src={three}/>
- المرحلة الثالثة</button>
+ المرحلة الثالثة</Link>
     </div>
     </div>
     <div className='container Games-container'>
-    <div className='flex row  '>
+    <div className='flex row justify-content-center '>
+    <h1 className='text-danger '>المحاولات:<span className=' border '>{turns}</span></h1>
+
       {cards.map(card=>(
        <SingleCard 
        key={card.id} 
@@ -170,7 +174,6 @@ const resetTurn=()=>{
     </div>
 
 
-    <p>المحاولات:{turns}</p>
 
     </div>
     </>
