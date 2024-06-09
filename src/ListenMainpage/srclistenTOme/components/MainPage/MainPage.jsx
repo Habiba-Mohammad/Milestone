@@ -7,10 +7,11 @@ const MainPage = () => {
 
         <>
 <div className=" MainPageCont">
+<h1 className="link">استمع للأصوات</h1>
+
   <div className="row  ">
   {MainPageData.map((item=>{
     return<>
-
     <div className="card col-4  p-5 " >
     <Link to={`/${item.link}`} className="button_wrapper">
   <img src={item.image} className="" alt="..."/>
