@@ -3,7 +3,7 @@ import ReactAudioPlayer from 'react-audio-player';
 import { Data } from '../../../../Data/ListenData';
 import { useState } from 'react';
 import "./Audio.css"
-const Audio = ({card,handleChoice,flipped,disabled}) => {
+const Audio = () => {
 
   return (
    <>
@@ -16,7 +16,7 @@ const Audio = ({card,handleChoice,flipped,disabled}) => {
 <img className="  m-2  p-1" src={item.image} />
 <ReactAudioPlayer
 
- className=' audio   '
+ className='audio'
   src={item.sound}
   
   controls

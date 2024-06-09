@@ -60,23 +60,29 @@ audio::-webkit-media-controls-timeline {
 
     @media (max-width: 912px){
         .Audio-container{
+            display:flex;
+            flex-direction:column;
            width:50%;
            padding:10%;
     
         }
         .audio{
-            width:100%;
-            
+            width: revert  
         }
   }
     @media (max-width: 539px){
-        .Audio-container{
-            width:100%;
-     
-         }
+        .Main-Audio-Container {
+            display: flex !important;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: stretch;
+            justify-content: center;
+            align-items: flex-start;
+        }
+       
         .audio{
-            width:100%;
             margin:10px;
+            width: revert
             
             
         }

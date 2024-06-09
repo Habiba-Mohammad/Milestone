@@ -49,7 +49,6 @@ export default function Stages(props){
 
 <div className="feeding"> 
 
-<img className="baby-feeding" src={babyfeeding}/>
 
  <h1 >{props.title} </h1>
 <h2> {props.feedingTitle}</h2>
@@ -64,6 +63,8 @@ export default function Stages(props){
 
       
   </>)})}
+  <img className="baby-feeding" src={babyfeeding}/>
+
 
     <div className="degree">   يتناسب عمر طفلك مع أقرانه في الإطعام بنسبة {(feedingScore/props.feeding.length*100).toFixed(2)} %</div>
 
