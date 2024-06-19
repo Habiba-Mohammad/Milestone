@@ -160,7 +160,7 @@ const resetTurn=()=>{
     </div>
     <div className='container Games-container'>
     <div className='flex row justify-content-center '>
-    <h1 className='text-danger '>المحاولات:<span className=' border '>{turns}</span></h1>
+    <h1 className='text-danger '>المحاولات: <span className='  '>{turns}</span></h1>
 
       {cards.map(card=>(
        <SingleCard 

@@ -94,7 +94,8 @@ font-size: xx-large;
   border: none;
   text-indent: 0px;
 }
- .stages{margin: 0px}
+ .stages{margin: 0px;
+}
 .stages img{
   display: none;
 }

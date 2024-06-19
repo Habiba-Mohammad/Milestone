@@ -1,13 +1,5 @@
 .mainCont{
-
-    background: white ;
     margin: 2%;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    margin-left: 60%;
     
 }
 .question{
@@ -25,8 +17,7 @@
      
 }
 .chooseStage .link{
-    font-family: 'Harmattan', sans-serif;
-font-size: 25px;
+font-size: 1.5rem;
     margin: 3px;
      color:#145a75;
      cursor:pointer;
@@ -44,7 +35,8 @@ font-size: 25px;
 }
 
 @media (max-width: 700px) {
-    .chooseStage h2{font-size: 60%;}
-   .mainCont{margin: 0;}
+  .question{font-size:2rem;}
+  .chooseStage .link{font-size:1rem}
+ .mainCont{margin: 0;}
    .chooseStage .link{margin: 0;}
 }
