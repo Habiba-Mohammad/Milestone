@@ -80,53 +80,53 @@ function App() {
 <Nav/>
 {/* <Audio/> */}
 <Routes>
-<Route  exact path="/Milestone" element={<><Hero/> </>}/>
+<Route  exact path="/Milestone/Main" element={<><Hero/> </>}/>
 
-  <Route  exact path="/Main" element={<><Hero/></>}/>
+  <Route  exact path="/Milestone/Main" element={<><Hero/></>}/>
 {/* <Route path="signUp" element={<><SignUp/> </>}/>  
 <Route path="login" element={<><Login/> </>}/>   */}
-<Route exact path="/Arabic" element={<><MainPage/></>}/>  
+<Route exact path="/Milestone/Arabic" element={<><MainPage/></>}/>  
 
-<Route exact path="/English" element={<><EnglishMainPage/></>}/>  
-<Route exact path="/about" element={<AboutUs/> }/>  
-<Route exact  path="/article" element={<Articles/> }/> 
-<Route exact path="/qs" element={<><MainAPage/></>}/>  
-<Route exact path="/help" element={<Help/>}/>  
-  <Route path="/stage1" element={items[0]}/> 
-  <Route path="/stage2" element={items[1]}/> 
-  <Route path="/stage3" element={items[2]}/>
-  <Route path="/stage4" element={items[3]}/> 
-  <Route path="/stage5" element={items[4]}/> 
-  <Route path="/stage6" element={items[5]}/> 
-  <Route path="/stage7" element={items[6]}/> 
-  <Route path="/stage8" element={items[7]}/> 
-  <Route path="/stage9" element={items[8]}/> 
-  <Route path="/stage10" element={items[9]}/> 
-  <Route path="/stage11" element={items[10]}/> 
-  <Route path="/stage12" element={items[11]}/> 
-  <Route path="/stageEnglish1"  exact element={itemsEnglish[0]}/> 
-  <Route path="/stageEnglish2" element={itemsEnglish[1]}/> 
-  <Route path="/stageEnglish3" element={itemsEnglish[2]}/>
-  <Route path="/stageEnglish4" element={itemsEnglish[3]}/> 
-  <Route path="/stageEnglish5" element={itemsEnglish[4]}/> 
-  <Route path="/stageEnglish6" element={itemsEnglish[5]}/> 
-  <Route path="/stageEnglish7" element={itemsEnglish[6]}/> 
-  <Route path="/stageEnglish8" element={itemsEnglish[7]}/> 
-  <Route path="/stageEnglish9" element={itemsEnglish[8]}/> 
-  <Route path="/stageEnglish11" element={itemsEnglish[10]}/> 
-  <Route path="/stageEnglish10" element={itemsEnglish[9]}/> 
-  <Route path="/stageEnglish12" element={itemsEnglish[11]}/> 
-<Route path='/Art1' element={<Qs/>}/>
-<Route path='/Art2' element={<Article2/>}/>
-<Route path='/ListentoTransports' element={<Transportations/>}/>
-<Route path='/ListentoAnimals' element={<AnimalSounds/>}/>
-<Route path='/ListentoOutside' element={<ObjectSounds/>}/>
-<Route path='/ListentoInsideHouse' element={<InsideHome/>}/>
-<Route path='/ListenToVerbs' element={<VerbsAudio/>}/>
-<Route path='//listen' element={<MainListenPage />}/>
-<Route path='/GamesMainPage' element={<GamesMainPage/>}/>
-<Route path='/MemoryGame' element={<Games/>}/>
-<Route path='/listiningGame' element={<Choose />}/>
+<Route exact path="/Milestone/English" element={<><EnglishMainPage/></>}/>  
+<Route exact path="/Milestone/about" element={<AboutUs/> }/>  
+<Route exact  path="/Milestone/article" element={<Articles/> }/> 
+<Route exact path="/Milestone/qs" element={<><MainAPage/></>}/>  
+<Route exact path="/Milestone/help" element={<Help/>}/>  
+  <Route path="/Milestone/stage1" element={items[0]}/> 
+  <Route path="/Milestone/stage2" element={items[1]}/> 
+  <Route path="/Milestone/stage3" element={items[2]}/>
+  <Route path="/Milestone/stage4" element={items[3]}/> 
+  <Route path="/Milestone/stage5" element={items[4]}/> 
+  <Route path="/Milestone/stage6" element={items[5]}/> 
+  <Route path="/Milestone/stage7" element={items[6]}/> 
+  <Route path="/Milestone/stage8" element={items[7]}/> 
+  <Route path="/Milestone/stage9" element={items[8]}/> 
+  <Route path="/Milestone/stage10" element={items[9]}/> 
+  <Route path="/Milestone/stage11" element={items[10]}/> 
+  <Route path="/Milestone/stage12" element={items[11]}/> 
+  <Route path="/Milestone/stageEnglish1"  exact element={itemsEnglish[0]}/> 
+  <Route path="/Milestone/stageEnglish2" element={itemsEnglish[1]}/> 
+  <Route path="/Milestone/stageEnglish3" element={itemsEnglish[2]}/>
+  <Route path="/Milestone/stageEnglish4" element={itemsEnglish[3]}/> 
+  <Route path="/Milestone/stageEnglish5" element={itemsEnglish[4]}/> 
+  <Route path="/Milestone/stageEnglish6" element={itemsEnglish[5]}/> 
+  <Route path="/Milestone/stageEnglish7" element={itemsEnglish[6]}/> 
+  <Route path="/Milestone/stageEnglish8" element={itemsEnglish[7]}/> 
+  <Route path="/Milestone/stageEnglish9" element={itemsEnglish[8]}/> 
+  <Route path="/Milestone/stageEnglish11" element={itemsEnglish[10]}/> 
+  <Route path="/Milestone/stageEnglish10" element={itemsEnglish[9]}/> 
+  <Route path="/Milestone/stageEnglish12" element={itemsEnglish[11]}/> 
+<Route path='/Milestone/Art1' element={<Qs/>}/>
+<Route path='/Milestone/Art2' element={<Article2/>}/>
+<Route path='/Milestone/ListentoTransports' element={<Transportations/>}/>
+<Route path='/Milestone/ListentoAnimals' element={<AnimalSounds/>}/>
+<Route path='/Milestone/ListentoOutside' element={<ObjectSounds/>}/>
+<Route path='/Milestone/ListentoInsideHouse' element={<InsideHome/>}/>
+<Route path='/Milestone/ListenToVerbs' element={<VerbsAudio/>}/>
+<Route path='/Milestone//listen' element={<MainListenPage />}/>
+<Route path='/Milestone/GamesMainPage' element={<GamesMainPage/>}/>
+<Route path='/Milestone/MemoryGame' element={<Games/>}/>
+<Route path='/Milestone/listiningGame' element={<Choose />}/>
 </Routes> 
 {/* <img className='doctor' src={doctor} alt="doctor"/> */}
 <Footer/>
