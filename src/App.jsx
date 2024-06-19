@@ -80,19 +80,19 @@ function App() {
 <Nav/>
 {/* <Audio/> */}
 <Routes>
-<Route  exact path="/Milestone/Main" element={<><Hero/> </>}/>
+<Route  exact path="/habiba-mohammad.github.io/ListentoOutsideMain" element={<><Hero/> </>}/>
 
-  <Route  exact path="/Milestone/Main" element={<><Hero/></>}/>
+  <Route  exact path="/habiba-mohammad.github.io/Main" element={<><Hero/></>}/>
 {/* <Route path="signUp" element={<><SignUp/> </>}/>  
 <Route path="login" element={<><Login/> </>}/>   */}
-<Route exact path="/Milestone/Arabic" element={<><MainPage/></>}/>  
+<Route exact path="/habiba-mohammad.github.io/Arabic" element={<><MainPage/></>}/>  
 
-<Route exact path="/Milestone/English" element={<><EnglishMainPage/></>}/>  
-<Route exact path="/Milestone/about" element={<AboutUs/> }/>  
-<Route exact  path="/Milestone/article" element={<Articles/> }/> 
-<Route exact path="/Milestone/qs" element={<><MainAPage/></>}/>  
-<Route exact path="/Milestone/help" element={<Help/>}/>  
-  <Route path="/Milestone/stage1" element={items[0]}/> 
+<Route exact path="/habiba-mohammad.github.io/English" element={<><EnglishMainPage/></>}/>  
+<Route exact path="/habiba-mohammad.github.io/about" element={<AboutUs/> }/>  
+<Route exact  path="/habiba-mohammad.github.io/article" element={<Articles/> }/> 
+<Route exact path="/habiba-mohammad.github.io/qs" element={<><MainAPage/></>}/>  
+<Route exact path="/habiba-mohammad.github.io/help" element={<Help/>}/>  
+  <Route path="/habiba-mohammad.github.io/stage1" element={items[0]}/> 
   <Route path="/Milestone/stage2" element={items[1]}/> 
   <Route path="/Milestone/stage3" element={items[2]}/>
   <Route path="/Milestone/stage4" element={items[3]}/> 
