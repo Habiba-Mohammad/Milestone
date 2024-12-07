@@ -9,6 +9,8 @@ const MainAPage = () => {
 <h1> مقالات متنوعة</h1>
 <li><Link className='A-link' to='/Art1'>  أهمية مراحل نمو وتطور الأطفال و فحوصات للأطفال.</Link></li>
 <li><Link className='A-link' to='/Art2'>ما هي مهارات ما قبل اللغة وأهميتها.</Link></li>
+<li><Link className='A-link' to='/Art3'>كلمات طفلي الأولى</Link></li>
+
 </div>
 
 </>  )

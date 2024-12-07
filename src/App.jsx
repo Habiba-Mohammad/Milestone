@@ -20,6 +20,7 @@ import EnglishMainPage from './Components/EnglishPages/EnglishMainPage/EnglishMa
 import EnglishNav from './Components/Stages/StagesEnglish/EnglishNav/EnglishNav'
 import Qs from './Components/Qs/Qs'
 import Article2 from './Components/Articles/Article2'
+import Article3 from './Components/Articles/Article3';
 import MainAPage from './Components/Articles/MainAPage'
 import MainListenPage from "./ListenMainpage/srclistenTOme/components/MainPage/MainPage"
 //
@@ -71,6 +72,26 @@ function App() {
 </>
     )
   })
+//   let DetailedAss=DetailedAssesment.map(item=>{
+//     return(<>
+//       <Stages
+      
+//       key={Date.now()}
+//       StageTitle={item.StageTitle}
+//       title={item.title}
+//       feedingTitle={item.feedingTitle}
+//       languageTitle={item.languageTitle}
+//       socialTitle={item.socilaTitle}
+//       cognitionTitle={item.cognitionTitl}
+//       movementTitle={item.movementTitle}
+//       feeding={item.feeding}
+//       social={item.social}
+//       language={item.language}
+//       cognition={item.cognitive}
+//       movement={item.movement}/>
+// </>
+//     )
+//   })
 
 
 
@@ -118,6 +139,8 @@ function App() {
   <Route path="/stageEnglish12" element={itemsEnglish[11]}/> 
 <Route path='/Art1' element={<Qs/>}/>
 <Route path='/Art2' element={<Article2/>}/>
+<Route path='/Art3' element={<Article3/>}/>
+
 <Route path='/ListentoTransports' element={<Transportations/>}/>
 <Route path='/ListentoAnimals' element={<AnimalSounds/>}/>
 <Route path='/ListentoOutside' element={<ObjectSounds/>}/>
@@ -130,7 +153,9 @@ function App() {
 </Routes> 
 {/* <img className='doctor' src={doctor} alt="doctor"/> */}
 <Footer/>
+
 </>
+
   )
 }
 export default App
